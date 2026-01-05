@@ -25,6 +25,12 @@ Soil texture and depth data were extracted from [rescaled products](https://caso
 
 Soil nitrogen availability is fixed at a value of `45` rather than using spatially variable values. A value of `45` maximizes the sensitivity to the plant nitrogen parameter based on the [hard-coded plant nitrogen sensitivity curves](https://iland-model.org/nitrogen+response). This approach effectively makes nitrogen control on plant productivity a *species level* process rather than a *stand level* process. It has been utilized successfully by Hansen et al. for iLand landscapes in Alaska. Other research groups have parameterized spatial nitrogen availability based on the data set produced by [Coops et al. (2012)](https://doi.org/10.1016/j.rse.2012.08.024). The dynamic nitrogen module is turned off in the model.
 
+## Light Influence Patterns
+
+The light influence patterns (LIP) represent a lookup table of ray tracing outputs that are created using the [Lightroom](https://iland-model.org/Lightroom) software, which is part of the iLand download package. A tutorial for parameterizing Lightroom is available in the model documentation (see link above). A more practical tutorial is provided in the `iLand_LIP_Calibration_Tutorial.Rmd` file. 
+
+For the Sierra Nevada model implementation, the LIP files were calibrated using the [Tallo allometric database](https://doi.org/10.1111/gcb.16302), along with additional values from literature (see the `SEKI_LIP_and_init_calibration.Rmd` file). The intermediate files along with the final LIP files are provided in the `LIP` folder.
+
 ## Useful Links
 
 * [Model home page](https://iland-model.org/startpage)
