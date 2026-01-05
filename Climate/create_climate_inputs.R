@@ -62,22 +62,23 @@ extract_pw_values <- function(filepath, var, plots, min_year = 2005, max_year = 
 #Need to allocate a lot of memory for this --> 128GB
 
 tmin_values <- extract_pw_values(filepath = filepath, var = "tmin", plots = plots)
-write.csv(tmin_values, "/home/rstudio/data-store/home/kiblerchris/tmin_olympic.csv")
+write.csv(tmin_values, "/home/rstudio/data-store/home/kiblerchris/tmin_seki.csv")
 
 tmax_values <- extract_pw_values(filepath = filepath, var = "tmax", plots = plots)
-write.csv(tmax_values, "/home/rstudio/data-store/home/kiblerchris/tmax_olympic.csv")
+write.csv(tmax_values, "/home/rstudio/data-store/home/kiblerchris/tmax_seki.csv")
 
 prec_values <- extract_pw_values(filepath = filepath, var = "prec", plots = plots)
-write.csv(prec_values, "/home/rstudio/data-store/home/kiblerchris/prec_olympic.csv")
+write.csv(prec_values, "/home/rstudio/data-store/home/kiblerchris/prec_seki.csv")
 
 solar_values <- extract_pw_values(filepath = filepath, var = "solar", plots = plots)
-write.csv(solar_values, "/home/rstudio/data-store/home/kiblerchris/solar_olympic.csv")
+write.csv(solar_values, "/home/rstudio/data-store/home/kiblerchris/solar_seki.csv")
 
 vpd_values <- extract_pw_values(filepath = filepath, var = "vpd", plots = plots)
-write.csv(vpd_values, "/home/rstudio/data-store/home/kiblerchris/vpd_olympic.csv")
+write.csv(vpd_values, "/home/rstudio/data-store/home/kiblerchris/vpd_seki.csv")
 
 # Create climate data sets for each site ----------------------------------
 
+#Load created values so they can be compiled by site
 tmin_values <- read.csv("/home/rstudio/data-store/home/kiblerchris/tmin_seki.csv") %>% 
   select(-X)
 tmax_values <- read.csv("/home/rstudio/data-store/home/kiblerchris/tmax_seki.csv") %>% 
@@ -114,7 +115,7 @@ for(p in unique(climate_values$plot)){
 # Export output as one SQLite file ----------------------------------------
 
 # Define database file path (single SQLite file)
-db_path <- "/home/rstudio/data-store/home/kiblerchris/SEKI_climate_data4.sqlite"
+db_path <- "/home/rstudio/data-store/home/kiblerchris/SEKI_climate_data.sqlite"
 
 # Connect to the database (creates if it doesn't exist)
 db.conn <- dbConnect(RSQLite::SQLite(), dbname = db_path)
