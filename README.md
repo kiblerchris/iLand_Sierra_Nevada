@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This iLand model implementation has been created to simulate alpine forest dynamics in California's Sierra Nevada mountains as part of the [Western Fire and Forest Resilience Collaborative (WFFRC)](https://www.westernfireforest.org/). It will ultimately be synthesized with other iLand landscapes created by WFFRC to simulate future forest resilience across the western United States.
+This iLand model implementation has been created to simulate alpine forest dynamics in California's Sierra Nevada mountains as part of the [Western Fire and Forest Resilience Collaborative](https://www.westernfireforest.org/) (WFFRC). It will ultimately be synthesized with other iLand landscapes created by WFFRC to simulate future forest resilience across the western United States.
 
 ## Species
 
@@ -10,7 +10,7 @@ The model implementation is designed to replicate conifer forest dynamics across
 
 | Vegetation Class  | Represented Species | Thom et al. (2024) Parameters |
 | ------------- | ------------- | ------------- |
-| Low elevation pine  | *Pinus ponderosa\*  | *Pinus ponderosa* |
+| Low elevation pine  | *Pinus ponderosa*  | *Pinus ponderosa* |
 | Incense cedar | *Calocedrus decurrens* | *Thuja plicata* |
 | Mixed fir | *Abies concolor*<br>*Abies magnifica*  | *Abies lasiocarpa* |
 | High elevation pine | *Pinus contorta*<br>*Pinus monticola* | *Pinus contorta* |
