@@ -1,0 +1,461 @@
+---
+title: "LIP calibration for Sequoia National Park"
+author: "Christopher Kibler"
+date: "2024-08-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(measurements)
+library(reshape2)
+
+```
+
+```{r, include = FALSE}
+
+hd_params <- function(dbh_cm, height_cm, bins = 10, thresh = 0.03){
+  
+  require(tidyverse)
+  
+  #Create data frame with input variables
+  dbh_height <- data.frame(dbh = dbh_cm, height = height_cm)
+  
+  #Bin data and calculate height/dbh ratio
+  dbh_groups <- dbh_height %>% 
+    mutate(group = cut(dbh, bins), hd = height/dbh)
+  
+  #Calculate upper and lower threshold values
+  upper_lower_thresh <- dbh_groups %>% 
+    group_by(group) %>% 
+    summarise(lower_hd_thresh = quantile(hd, probs = thresh), 
+              upper_hd_thresh = quantile(hd, probs = 1 - thresh)) %>% 
+    as.data.frame()
+  
+  #Add threshold values to dataframe
+  hd_thresh <- left_join(dbh_groups, upper_lower_thresh, by = 'group')
+  
+  #Estimate parameter values for low sample
+  fit_lower <- nls(hd ~ b * dbh^(k), 
+                   start = list(b = 50, k = 0.1), 
+                   data = filter(hd_thresh, hd <= lower_hd_thresh)) 
+  hd.l <- list(b = fit_lower$m$getPars()[1], k = fit_lower$m$getPars()[2])
+  
+  #Estimate parameter values for high sample
+  fit_upper <- nls(hd ~ b * dbh^(k), 
+                   start = list(b = 50, k = 0.1), 
+                   data = filter(hd_thresh, hd >= upper_hd_thresh)) 
+  hd.u <- list(b = fit_upper$m$getPars()[1], k = fit_upper$m$getPars()[2])
+  
+  #Create list of parameters for output
+  output <- list(hd.l = hd.l, hd.u = hd.u)
+  
+  return(output)
+}
+
+predict_hd_tallo <- function(tallo, species, type, dbh = NA, dbh_from = NA, dbh_to = NA){
+  
+  require(tidyverse)
+  
+  #Filter by species and calculate h/d ratio
+  vals <- filter(tallo, species == species) %>% 
+    mutate(hd = (height_m * 100)/stem_diameter_cm)
+  
+  #Calculate parameters for non-linear fit line
+  tallo_fit <- nls(hd ~ b * stem_diameter_cm^(k), start = list(b = 50, k = 0.1), data = vals) 
+  fitline <- tallo_fit$m$getPars()
+  
+  if(type == "individual"){
+    
+    hd <- fitline[1] *  dbh^fitline[2]
+    
+  } else if(type == "class"){
+    
+    #Create data frame of predicted values over the same range
+    max_dbh <- max(vals$stem_diameter_cm)
+    fit_df <- data.frame(stem_diameter_cm = seq(0.1, max_dbh, 0.1), 
+                         hd = fitline[1] *  seq(0.1, max_dbh, 0.1)^fitline[2])
+    
+    #Calculate mean h/d ratio within desired range
+    hd <- mean(filter(fit_df, stem_diameter_cm >= dbh_from & stem_diameter_cm <= dbh_to)$hd)
+    
+  } else {stop("type not recognized")}
+  
+  return(hd)
+  
+}
+
+crown_params <- function(t){
+  
+  #Universal constants from Purves et al. (2007)
+  R0_C0 <- 0.503
+  R0_C1 <- 3.126
+  R40_C0 <- 0.5
+  R40_C1 <- 10
+  B_C0 <- 0.196
+  B_C1 <- 0.511
+  
+  #Empirical equations to estimate parameters from Purves et al. (2007)
+  R0 = ((1 - t) * R0_C0) + (t * R0_C1)
+  R40 = ((1 - t) * R40_C0) + (t * R40_C1)
+  B = ((1 - t) * B_C0) + (t * B_C1)
+  
+  #Create list of parameters for output
+  output <- list(R0 = R0, R40 = R40, B = B)
+  
+  return(output)
+}
+
+```
+
+## Create light competition parameters
+
+### Create list to store parameters
+
+```{r}
+
+LIP_parameters <- list()
+
+```
+
+
+### Load Tallo
+
+```{r}
+
+tallo <- read.csv('tallo.csv')
+
+```
+
+### Creater parameters for fir
+
+```{r}
+
+tallo_abla <- tallo %>% 
+  filter(species == "Abies lasiocarpa")
+
+hd_abla <- hd_params(dbh_cm = tallo_abla$stem_diameter_cm, 
+                    height_cm = tallo_abla$height_m * 100, 
+                    bins = 10, 
+                    thresh = 0.05)
+
+plot_vals <- tallo_abla %>% 
+  mutate(hdr = (height_m * 100)/stem_diameter_cm) %>% 
+  mutate(min_curve = hd_abla$hd.l$b * stem_diameter_cm ^ hd_abla$hd.l$k,
+         max_curve = hd_abla$hd.u$b * stem_diameter_cm ^ hd_abla$hd.u$k)
+
+ggplot(plot_vals, aes(x = stem_diameter_cm, y = hdr)) +
+  geom_point() +
+  geom_line(aes(x = stem_diameter_cm, y = min_curve), color = "blue") +
+  geom_line(aes(x = stem_diameter_cm, y = max_curve), color = "red") +
+  theme_bw() +
+  labs(x = "DBH (cm)", y = "Height/Diameter Ratio")
+
+crown_params_abla <- crown_params(t = 0.181) #Abies lasiocarpa
+
+#ABLA plots from Antos et al. (2010), CJFR
+crown_length_abla <- mean(c(16.3/20.8, 12.1/15.1, 13.1/17.4, 12.5/16.6, 12.8/17.6, 15.3/19.8, 15.3/20.1, 14.2/18.1))
+
+LIP_parameters$abla <- list(name = 'abla',
+                            hd.l = hd_abla$hd.l,
+                            hd.u = hd_abla$hd.u,
+                            B = crown_params_abla$B,
+                            Rmax = list(R0 = crown_params_abla$R0, 
+                                        R40_R0 = crown_params_abla$R40 - crown_params_abla$R0),
+                            cr.length = crown_length_abla)
+
+```
+
+### Create parameters for low elevation pine
+
+```{r}
+
+tallo_pipo <- tallo %>% 
+  filter(species == "Pinus ponderosa") %>% 
+  mutate(hdr = (height_m * 100)/stem_diameter_cm)
+
+hd_pipo <- hd_params(dbh_cm = tallo_pipo$stem_diameter_cm, 
+                    height_cm = tallo_pipo$height_m * 100, 
+                    bins = 10, 
+                    thresh = 0.05)
+
+plot_vals <- tallo_pipo %>% 
+  mutate(hdr = (height_m * 100)/stem_diameter_cm) %>% 
+  mutate(min_curve = hd_pipo$hd.l$b * stem_diameter_cm ^ hd_pipo$hd.l$k,
+         max_curve = hd_pipo$hd.u$b * stem_diameter_cm ^ hd_pipo$hd.u$k)
+
+ggplot(plot_vals, aes(x = stem_diameter_cm, y = hdr)) +
+  geom_point() +
+  geom_line(aes(x = stem_diameter_cm, y = min_curve), color = "blue") +
+  geom_line(aes(x = stem_diameter_cm, y = max_curve), color = "red") +
+  theme_bw() +
+  labs(x = "DBH (cm)", y = "Height/Diameter Ratio")
+
+crown_params_pipo <- crown_params(t = 0.314) #Pinus ponderosa
+
+#PIPO value from Hull Sieg et al. (2006), Forest Science
+crown_length_pipo <- 0.606
+
+LIP_parameters$pipo <- list(name = 'pipo',
+                            hd.l = hd_pipo$hd.l,
+                            hd.u = hd_pipo$hd.u,
+                            B = crown_params_pipo$B,
+                            Rmax = list(R0 = crown_params_pipo$R0, 
+                                        R40_R0 = crown_params_pipo$R40 - crown_params_pipo$R0),
+                            cr.length = crown_length_pipo)
+
+```
+
+### Create parameters for high elevation pine
+
+```{r}
+
+tallo_pico <- tallo %>% 
+  filter(species == "Pinus contorta") %>% 
+  mutate(hdr = (height_m * 100)/stem_diameter_cm)
+
+hd_pico <- hd_params(dbh_cm = tallo_pico$stem_diameter_cm, 
+                    height_cm = tallo_pico$height_m * 100, 
+                    bins = 10, 
+                    thresh = 0.03)
+
+plot_vals <- tallo_pico %>% 
+  mutate(hdr = (height_m * 100)/stem_diameter_cm) %>% 
+  mutate(min_curve = hd_pico$hd.l$b * stem_diameter_cm ^ hd_pico$hd.l$k,
+         max_curve = hd_pico$hd.u$b * stem_diameter_cm ^ hd_pico$hd.u$k)
+
+ggplot(plot_vals, aes(x = stem_diameter_cm, y = hdr)) +
+  geom_point() +
+  geom_line(aes(x = stem_diameter_cm, y = min_curve), color = "blue") +
+  geom_line(aes(x = stem_diameter_cm, y = max_curve), color = "red") +
+  theme_bw() +
+  labs(x = "DBH (cm)", y = "Height/Diameter Ratio")
+
+crown_params_pico <- crown_params(t = 0.235) #from Purves et al. for Pinus contorta
+
+#Value for *Pinus contorta* derived from Muhairwe (1994), Canadian Journal of Forest Research
+crown_length_pico <- 0.582
+
+LIP_parameters$pico <- list(name = 'pico',
+                            hd.l = hd_pico$hd.l,
+                            hd.u = hd_pico$hd.u,
+                            B = crown_params_pico$B,
+                            Rmax = list(R0 = crown_params_pico$R0, 
+                                        R40_R0 = crown_params_pico$R40 - crown_params_pico$R0),
+                            cr.length = crown_length_pico)
+
+```
+
+### Create parameters for incense cedar
+
+```{r}
+
+tallo_cade <- tallo %>% 
+  filter(species == "Calocedrus decurrens") %>% 
+  mutate(min_height_cm = height_m * 100, max_height_cm = height_m * 100, dbh_cm = stem_diameter_cm) %>% 
+  mutate(min_hdr = min_height_cm/dbh_cm, max_hdr = max_height_cm/dbh_cm) %>% 
+  select(dbh_cm,min_hdr, max_hdr) %>% 
+  mutate(type = "tallo") %>% 
+  filter(min_hdr > 100)
+
+#Incense Cedar, Volumes 601-625 by John Alfred Mitchell, Table 11
+dbh_in <- seq(8, 66, 2)
+min_height_feet <- c(14, 19, 23, 28, 32, 35, 40, 44, 48, 51, 55, 58, 61, 65, 68, 71, 74, 76, 79, 82, 85, 87, 90, 92, 94, 97, 100, 102, 104, 107)
+max_height_feet <- c(41, 54, 64, 74, 84, 93, 101, 108, 114, 122, 128, 133, 138, 143, 147, 151, 154, 158, 162, 165, 168, 171, 174, 176, 177, 179, 180, 181, 182, 183)
+
+cade <- data.frame(dbh_in, min_height_feet, max_height_feet) %>% 
+  mutate(dbh_cm = conv_unit(dbh_in, from = "in", to = "cm")) %>% 
+  mutate(min_height_cm = conv_unit(min_height_feet, from = "ft", to = "cm")) %>% 
+  mutate(max_height_cm = conv_unit(max_height_feet, from = "ft", to = "cm")) %>% 
+  mutate(min_hdr = min_height_cm/dbh_cm, max_hdr = max_height_cm/dbh_cm) %>% 
+  select(dbh_cm, min_hdr, max_hdr) %>% 
+  mutate(type = "mitchell") %>% 
+  bind_rows(., tallo_cade)
+
+min_model <- nls(min_hdr ~ a * (dbh_cm^b), data = cade, start = list(a = 350, b = -0.43))
+max_model <- nls(max_hdr ~ a * (dbh_cm^b), data = cade, start = list(a = 350, b = -0.43))
+
+cade_curves <- data.frame(dbh = seq(0, 175, 1)) %>% 
+  mutate(min_curve = coef(min_model)[1] * (dbh^coef(min_model)[2])) %>% 
+  mutate(max_curve = coef(max_model)[1] * (dbh^coef(max_model)[2]))
+
+cade_plot <- cade %>% 
+  select(-type) %>% 
+  melt(id.vars = "dbh_cm")
+
+ggplot(cade_plot, aes(x = dbh_cm, y = value, col = variable)) +
+  geom_point() +
+  geom_line(data = cade_curves, aes(x = dbh, y = min_curve), inherit.aes = FALSE, color = "blue") +
+  geom_line(data = cade_curves, aes(x = dbh, y = max_curve), inherit.aes = FALSE, color = "red") +
+  theme_bw() +
+  labs(x = "DBH (cm)", y = "Height/Diameter Ratio")
+
+cade_hdl <- list(b = coef(min_model)[1], k = coef(min_model)[2])
+cade_hdu <- list(b = coef(max_model)[1], k = coef(max_model)[2])
+
+crown_params_cade <- crown_params(0.240) #value from Purves et al. Table S2
+crown_length_cade <- 0.5
+
+LIP_parameters$cade <- list(name = 'cade',
+                            hd.l = cade_hdl,
+                            hd.u = cade_hdu,
+                            B = crown_params_cade$B,
+                            Rmax = list(R0 = crown_params_cade$R0, 
+                                        R40_R0 = crown_params_cade$R40 - crown_params_cade$R0),
+                            cr.length = crown_length_cade)
+
+```
+
+### Calculate hd parameters from Tallo
+
+```{r, eval = FALSE}
+
+hd <- hd_params(dbh_cm = tallo$stem_diameter_cm, height_cm = tallo$height_m * 100, bins = 10, thresh = 0.03)
+
+hd.l <- hd$hd.l
+hd.u <- hd$hd.u
+
+```
+
+### Calculate crown shape parameters
+
+```{r, eval = FALSE}
+
+#crown_params <- crown_params(t = 0.235) #from Purves et al. for Pinus contorta
+#crown_params <- crown_params(t = 0.181) #Abies lasiocarpa
+crown_params <- crown_params(t = 0.314) #Pinus ponderosa
+
+Rmax <- c(crown_params$R0, crown_params$R40 - crown_params$R0)
+
+```
+
+### Define crown ratio
+
+Value for *Pinus contorta* derived from Muhairwe (1994), Canadian Journal of Forest Research
+
+```{r, eval = FALE}
+
+#cr.length <- 0.582
+
+#cr.length <- mean(c(16.3/20.8, 12.1/15.1, 13.1/17.4, 12.5/16.6, 12.8/17.6, 15.3/19.8, 15.3/20.1, 14.2/18.1)) #ABLA plots from Antos et al. (2010), CJFR
+
+cr.length <- 0.606 #PIPO value from Hull Sieg et al. (2006), Forest Science
+
+```
+
+### Define bhd and hd ranges
+
+```{r}
+
+bhd.range <- seq(1, 175, 1)
+hd.range <- seq(5, 255, 10)
+
+```
+
+### Create inputs to FONStudio
+
+```{r make_fonstudio_table, eval = FALSE}
+
+for(n in names(LIP_parameters)){
+  
+  params <- LIP_parameters[[n]]
+  
+  Name <- params$name
+
+  xml.out <- data.frame()
+  
+  for(i in bhd.range){
+    for(j in hd.range){
+      lower = (params$hd.l$b * i^params$hd.l$k) * 0.85 # be on the conservative side
+      upper = (params$hd.u$b * i^params$hd.u$k) * 1.15 # be on the conservative side
+      if(j >= lower & j <= upper & j < 195 & j > 35){ #35-195 is hard-coded limit in iLand
+        h = i * j / 100
+        h.cr = round(h * (1 - params$cr.length), 2)
+        Rm = round(params$Rmax$R0 + params$Rmax$R40_R0 * (i/40),3) 
+        id = paste(Name,"_",i,"_",h,sep="")
+        xml.out = rbind(xml.out,data.frame(trees = paste('<tree name="', id,'" bhd="', i,'" h="', h,'" crown="', h.cr,'" formula="', Rm,'*(min(0.95, hrel)/0.95)^', params$B,'"/>', sep='')))
+        }
+      }
+    }
+  
+  write.table(xml.out, paste("v2_FONtrees_",Name,".txt", sep=""), quote=F, col.names=F, row.names=F)
+
+  print(n)
+
+}
+
+```
+
+## Initialize vegetation
+
+### Load plot data
+
+```{r load_plot_data, eval = FALSE}
+
+plot_data <- read.csv('./resekidemographicdata/allplotarchiveout03252022.csv') %>% 
+  #filter(PLOT == "HOMEPICO", SppCode == "PICO") %>% 
+  filter(PLOT == "HOMEPICO", SppCode %in% c('PICO', 'ABMA')) %>% 
+  mutate(SppCode = recode(SppCode, ABMA = "ABLA")) %>% 
+  select(XCoord, YCoord, SppCode, DBH1) %>% 
+  rename(x = XCoord, y = YCoord, species = SppCode, dbh = DBH1) %>%
+  filter(dbh > 0) %>% 
+  mutate(hd = predict_hd_tallo(tallo = tallo, species = "Pinus contorta", type = "individual", dbh = dbh)) %>% 
+  mutate(height = (hd * dbh) / 100, age = 0) %>% 
+  select(x, y, dbh, hd, height, species, age)
+
+head(plot_data)
+
+```
+
+### Create sapling initialization
+
+```{r sapling_initialization, warning = FALSE, eval = FALSE}
+
+sapling_init <- plot_data %>% 
+  mutate(species = tolower(species)) %>% 
+  filter(height < 4) %>% 
+  group_by(species) %>% 
+  mutate(group = cut(height, 10)) %>% 
+  ungroup() %>% 
+  group_by(species, group) %>% 
+  summarize(count = n()) %>% #count the number of saplings in each group
+  mutate(x_tmp = str_sub(group, 2, -2)) %>% #create dbh labels
+  separate(x_tmp, c("height_from", "height_to"), sep = ",") %>% 
+  mutate_at(c("height_from", "height_to"), as.double) %>% 
+  select(-group) %>% 
+  as.data.frame() %>% 
+  mutate(stand_id = 1)
+
+sapling_init
+
+write.table(sapling_init, file ="sapling_init.txt", sep = ";", quote = FALSE, row.names = FALSE)
+
+```
+
+### Create tree initialization
+
+```{r tree_initialization, warning = FALSE, eval = FALSE}
+
+tree_init <- plot_data %>% 
+  mutate(species = tolower(species)) %>% 
+  filter(height > 4) %>% 
+  group_by(species) %>% 
+  mutate(group = cut(dbh, 10)) %>% 
+  ungroup() %>% 
+  group_by(species, group) %>% 
+  summarize(count = n(), hd = round(mean(hd), 2)) %>%
+  mutate(x_tmp = str_sub(group, 2, -2)) %>% #create dbh labels
+  separate(x_tmp, c("dbh_from", "dbh_to"), sep = ",") %>% 
+  mutate_at(c("dbh_from", "dbh_to"), as.double) %>% 
+  mutate(age = 0, stand_id = 1) %>% 
+  select(-group) %>% 
+  relocate(species, count, dbh_from, dbh_to, hd, age, stand_id) %>% 
+  as.data.frame()
+
+tree_init
+
+write.table(tree_init, file ="tree_init.txt", sep = ";", quote = FALSE, row.names = FALSE)
+
+```

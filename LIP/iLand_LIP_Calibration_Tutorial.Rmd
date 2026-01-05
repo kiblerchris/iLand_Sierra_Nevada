@@ -1,0 +1,244 @@
+---
+title: "iLand LIP Calibration"
+author: "Christopher Kibler"
+date: "2024-07-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## File Structure Overview
+
+Light influence pattern (LIP) files are created in the FONStudio software. The FONStudio software accepts an XML file with the parameters for individual trees. The structure of the full XML file can be found on the [iLand wiki](https://iland-model.org/Lightroom?highlight=lightroom). The portion of the code that is contains the tree parameters is structured as follows:
+
+```{xml, eval = FALSE}
+<trees>
+  <tree name="Piab_4.5_3.15" bhd="4.5" h="3.15" crown="1.2"
+        formula="0.954*(min(0.95, hrel)/0.95)^0.28483" />
+  <tree name="Piab_4.5_3.6" bhd="4.5" h="3.6" crown="1.38"
+        formula="0.954*(min(0.95, hrel)/0.95)^0.28483" />
+</trees>
+
+```
+
+There are five tree parameters in the XML file:
+
+* The **name** parameter is only for informational purposes.
+* The **bhd** paramater is the DBH of the tree, measured in cm.
+* The **h** parameter is the height of the tree, measured in m.
+* The **crown** parameter is the height of the living crown above the ground, measured in m.
+* The **formula** parameter calculates the width of the crown at a height defined by **hrel**, which is the relative height measured from the ground.
+
+## Crown Width Formula
+
+The crown width formula is based on Equation S1.7 in [Purves et al. (2007)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000870):
+
+$$
+R^z = R_{max} * \left(\frac{min(z, z_{max})}{z_{max}}\right)^B
+$$
+
+where $R^z$ is the radius at tree height $z$, $R_{max}$ is the maximum crown radius of a tree of the same diameter, and $B$ is a shape parameter with $B=1$ resulting in a conical crown, $B<1$ resulting in a convex crown, and $B>1$ resulting in a concave crown. More information about the light calculations can be found on the [iLand Wiki](https://iland-model.org/competition+for+light).
+
+## Creating the XML File
+
+The following code can be used to create the XML file for a species over a given range of DBH and tree height values:
+
+```{r, eval = FALSE}
+
+xml.out=data.frame()
+
+for(i in bhd.range)
+  {
+  for(j in hd.range)
+    {
+    lower=(hd.l[1]*i^hd.l[2])*0.85 # be on the conservative side
+    upper=(hd.u[1]*i^hd.u[2])*1.15 # be on the conservative side
+    if(j>=lower & j<=upper)
+      {
+      h=i*j/100
+      h.cr=round(h*(1-cr.length),2)
+      Rm=round(Rmax[1]+Rmax[2]*(i/40),3) 
+      id=paste(Name,"_",i,"_",h,sep="")
+      xml.out=rbind(xml.out,data.frame(trees=paste('<tree name="',id,'" bhd="',i,'" h="',h,'" crown="',h.cr,'" formula="',Rm,'*(min(0.95, hrel)/0.95)^',B,'"/>',sep='')))
+      }
+    }
+  }
+
+write.table(xml.out,paste("FONtrees_",Name,".csv",sep=""),quote=F,col.names=F,row.names=F)
+```
+
+### Required Inputs
+
+The **bhd.range** variable contains a vector of DBH values for the creation of parameter sets.
+
+```{r, eval = FALSE}
+bhd.range=c(seq(4.5,9.5,1),seq(11,19,2),seq(22,222,4))
+```
+
+The **hd.range** variable contains a vector of height/diameter ratios for the creation of parameter sets.
+
+```{r, eval = FALSE}
+hd.range=seq(20,190,10)
+```
+
+The **hd.l** and **hd.u** variables contain parameters to calculate the lower and upper height/diameter boundaries for a given species. See below for an explanation of how to fit the parameters from plot data.
+
+```{r, eval = FALSE}
+hd.l=c(48.58,-0.13)
+hd.u=c(402.66,-0.36)
+```
+
+The **cr.length** variable is the length of the crown as a proportion of the total tree height.*Edit this for each species.*
+
+```{r, eval = FALSE}
+cr.length=0.3815
+```
+
+The **Rmax** variable contains two terms. The first term is $R_0$, which is the maximum potential crown radius for a tree with a DBH of 0 cm. The second term is $R_{40} - R_0$, where $R_{40}$ is defined similarly. *Edit this for each species*
+
+```{r, eval = FALSE}
+Rmax=c(1.562692,4.338-1.562692)
+```
+
+The **B** variable is the crown shape parameter described above.
+
+```{r, eval = FALSE}
+B=0.32326
+```
+
+A species name parameter is also necessary for saving the output.
+
+```{r, eval = FALSE}
+Name="Potr"
+```
+
+### Code Explanation
+
+The first three lines of code inside of the loops calculate the lower and upper height/diameter ratios based on the supplied DBH value and then check that the supplied height/diameter ratio is within the acceptable range.
+
+```{r, eval = FALSE}
+lower=(hd.l[1]*i^hd.l[2])*0.85 # be on the conservative side
+upper=(hd.u[1]*i^hd.u[2])*1.15 # be on the conservative side
+```
+
+The calculations are based on the equation:
+
+$$
+  HD = b * DBH^k
+$$
+where b is the first term in the tuple and k is second term in the tuple. The curves are then adjusted up and down to be conservative.
+
+The next line calculates the tree height as the product of the DBH and the height/diameter ratio, with a unit conversion.
+
+```{r, eval = FALSE}
+h=i*j/100
+```
+
+The next line calculates the height of the crown based on the calculated height and the supplied crown length parameter.
+
+```{r, eval = FALSE}
+h.cr=round(h*(1-cr.length),2)
+```
+
+The next line calculates $R_{max}$ based for a given DBH by treating $R_0$ as an intercept term and then using $R_{40} - R_0$ to calculate the marginal increase in $R_{max}$ between 0 cm and 40 cm. See equation S1.6 in [Purves et al. (2007)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000870).
+
+```{r, eval = FALSE}
+Rm=round(Rmax[1]+Rmax[2]*(i/40),3) 
+```
+
+The variables are then stored in an XML record. The formula utilizes the **Rm** and **B** variables.
+
+```{r, eval = FALSE}
+paste('<tree name="',id,'" bhd="',i,'" h="',h,'" crown="',h.cr,'" formula="',Rm,'*(min(0.95, hrel)/0.95)^',B,'"/>',sep='')
+```
+
+## Parameter Estimation
+
+[Purves et al. (2007)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000870) created a scheme to estimate the values of $R_0$, $R_{40}$, and $B$ based on a $T$ parameter for each species and fixed constants to calculate each variable. For example, $R_0$ can be calculated as:
+
+$$
+  R_0 = (1 - T)C_{0, R_0} + TC_{1, R_0}
+$$
+
+where $T$ is a species-specific parameter and $C_{0, R_0}$ and $C_{1, R_0}$ are provided constants. The formulas for $R_0$, $R_{40}$, and $B$ are listed in Equation S3.3 of their article, and the corresponding constants are listed in Table S2. The authors provide $T$ values for 250 North American tree species in Table S3.
+
+## Fitting hd.l and hd.u from Plot Data
+
+The hd.l and hd.u parameters are estimated by fitting curves to the bottom 3% and top 3% of height/diameter ratios within sequential DBH bins. Nonlinear least squares can be used to estimate the two parameters.
+
+```{r, eval = FALSE}
+
+fit <- nls(HD ~ b * DBH_cm^(k), start = list(b = b, k = k),data = plot_data) 
+
+```
+
+## Sample Functions for Parameter Estimation
+
+The following function can be used to estimate **hd.l** and **hd.u** from DBH and height data for a plot.
+
+```{r, eval = FALSE}
+
+hd_params <- function(dbh_cm, height_cm, bins = 10, thresh = 0.03){
+  
+  require(tidyverse)
+  
+  #Create data frame with input variables
+  dbh_height <- data.frame(dbh = dbh_cm, height = height_cm)
+  
+  #Bin data and calculate height/dbh ratio
+  dbh_groups <- dbh_height %>% 
+    mutate(group = cut(dbh, bins), hd = height/dbh)
+  
+  #Calculate upper and lower threshold values
+  upper_lower_thresh <- dbh_groups %>% 
+    group_by(group) %>% 
+    summarise(lower_thresh = quantile(dbh, probs = thresh), upper_thresh = quantile(dbh, probs = 1 - thresh)) %>% 
+    as.data.frame()
+  
+  #Add threshold values to dataframe
+  dbh_thresh <- left_join(dbh_groups, upper_lower_thresh, by = 'group')
+
+  #Estimate parameter values for low sample
+  fit_lower <- nls(hd ~ b * dbh^(k), start = list(b = 50, k = 0.1), data = filter(dbh_thresh, dbh <= lower_thresh)) 
+  hd.l <- c(fit_lower$m$getPars()[1], fit_lower$m$getPars()[2])
+  
+  #Estimate parameter values for high sample
+  fit_upper <- nls(hd ~ b * dbh^(k), start = list(b = 50, k = 0.1), data = filter(dbh_thresh, dbh >= upper_thresh)) 
+  hd.u <- c(fit_upper$m$getPars()[1], fit_upper$m$getPars()[2])
+  
+  #Create list of parameters for output
+  output <- list(hd.l = hd.l, hd.u = hd.u)
+  
+  return(output)
+}
+
+```
+
+The following function can be used to estimate $R_0$, $R_{40}$, and $B$ based on the approach proposed by [Purves et al. (2007)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000870). The species-specific value of **T** can be extracted from Table S3 of their paper.
+
+```{r, eval = FALSE}
+
+crown_params <- function(t){
+  
+  #Universal constants from Purves et al. (2007)
+  R0_C0 <- 0.503
+  R0_C1 <- 3.126
+  R40_C0 <- 0.5
+  R40_C1 <- 10
+  B_C0 <- 0.196
+  B_C1 <- 0.511
+  
+  #Empirical equations to estimate parameters from Purves et al. (2007)
+  R0 = ((1 - t) * R0_C0) + (t * R0_C1)
+  R40 = ((1 - t) * R40_C0) + (t * R40_C1)
+  B = ((1 - t) * B_C0) + (t * B_C1)
+
+  #Create list of parameters for output
+  output <- list(R0 = R0, R40 = R40, B = B)
+  
+  return(output)
+}
+
+```
