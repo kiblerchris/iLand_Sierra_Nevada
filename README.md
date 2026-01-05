@@ -25,3 +25,10 @@ Soil texture and depth data were extracted from [rescaled products](https://caso
 
 Soil nitrogen availability is fixed at a value of `45` rather than using spatially variable values. A value of `45` maximizes the sensitivity to the plant nitrogen parameter based on the [hard-coded plant nitrogen sensitivity curves](https://iland-model.org/nitrogen+response). This approach effectively makes nitrogen control on plant productivity a *species level* process rather than a *stand level* process. It has been utilized successfully by Hansen et al. for iLand landscapes in Alaska. Other research groups have parameterized spatial nitrogen availability based on the data set produced by [Coops et al. (2012)](https://doi.org/10.1016/j.rse.2012.08.024). The dynamic nitrogen module is turned off in the model.
 
+## Useful Links
+
+* [Model home page](https://iland-model.org/startpage)
+* [Model documentation](https://iland-model.org/iLand+Hub)
+* [Source code](https://github.com/edfm-tum/iland-model) (most useful source code [here](https://github.com/edfm-tum/iland-model/blob/058749ffb2d174d171ca1fc8541baa0f127babbf/src/core/tree.cpp))
+* [iLand Discord server](https://discord.gg/seCBZnpj)
+* iLand North America meetings and listserv (contact Kristin Braziunas)
