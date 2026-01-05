@@ -1,0 +1,542 @@
+10:10:19:847: **************************************************
+10:10:19:847: project-file: "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/project_file.xml"
+10:10:19:847: started at:  "2026/01/05 10:10:19"
+10:10:19:847: iLand  2.0  ( "branch: main, version: aa9cf570, date: 18.07.2024" )
+10:10:19:847: **************************************************
+10:10:19:847: "extended debug checks disabled."
+10:10:19:847: current File Paths:
+10:10:19:847: "temp" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/temp"
+10:10:19:847: "init" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init"
+10:10:19:847: "lip" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/lip"
+10:10:19:847: "exe" :  "C:/Users/kible/Documents/Research/iLand/iLandPackage2.0"
+10:10:19:847: "log" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run"
+10:10:19:847: "script" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run"
+10:10:19:847: "output" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/output"
+10:10:19:847: "database" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/databases"
+10:10:19:847: "home" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run"
+10:10:19:847: Warning: xml: node "system.javascript.fileName" is not present.
+10:10:19:870: setup database connection "in" to "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/databases/SEKI_species.sqlite"
+10:10:19:870: setup database connection "climate" to "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/databases/SEKI_climate.sqlite"
+10:10:19:870: Warning: xml: node "model.climate.microclimate.enabled" is not present.
+10:10:19:870: Warning: xml: node "system.settings.responsive" is not present.
+10:10:19:872: The linearization of expressions is enabled (performance optimization).
+10:10:19:872: Loglevel set to Warning.
+10:10:19:872: "fire"
+10:10:19:872: "wind"
+10:10:19:872: "barkbeetle"
+10:10:19:872: "setup of the world: 1000x1900m with cell-size=2m and 200m buffer"
+10:10:19:872: setup grid rectangle: QRectF(-200,-200 1400x2300)
+10:10:19:872: setup of spatial location: x/y/z 0 0 0 rotation: 0
+10:10:19:872: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/lip/readerstamp.bin"
+10:10:19:877: attempting to load a species set from "species"
+10:10:19:877: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/lip/abla_out_v2.bin"
+10:10:19:878: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/lip/pipo_out_v2.bin"
+10:10:19:894: loaded 2 active species:
+10:10:19:894: index, id, name
+10:10:19:894: 0 "abla" "Abies lasiocarpa"
+10:10:19:894: 1 "pipo" "Pinus ponderosa"
+10:10:19:894: Environment: climate: # of climate tables in environment file: 19
+10:10:19:894: Warning: xml: node "co2pathway" is not present.
+10:10:19:894: Warning: xml: node "co2startYear" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.settings.groundVegetationLAI" is not present.
+10:10:19:894: Warning: xml: node "model.settings.groundVegetationPsiMin" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.settings.groundVegetationLAI" is not present.
+10:10:19:894: Warning: xml: node "model.settings.groundVegetationPsiMin" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.settings.groundVegetationLAI" is not present (3rd occurrence, suppressed in the future).
+10:10:19:894: Warning: xml: node "model.settings.groundVegetationPsiMin" is not present (3rd occurrence, suppressed in the future).
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:894: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "co2pathway" is not present.
+10:10:19:910: Warning: xml: node "co2startYear" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "co2pathway" is not present.
+10:10:19:910: Warning: xml: node "co2startYear" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:910: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "co2pathway" is not present.
+10:10:19:926: Warning: xml: node "co2startYear" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "co2pathway" is not present.
+10:10:19:926: Warning: xml: node "co2startYear" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "co2pathway" is not present.
+10:10:19:926: Warning: xml: node "co2startYear" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:926: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "co2pathway" is not present.
+10:10:19:942: Warning: xml: node "co2startYear" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "co2pathway" is not present.
+10:10:19:942: Warning: xml: node "co2startYear" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:942: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "co2pathway" is not present.
+10:10:19:958: Warning: xml: node "co2startYear" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "co2pathway" is not present.
+10:10:19:958: Warning: xml: node "co2startYear" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "co2pathway" is not present.
+10:10:19:958: Warning: xml: node "co2startYear" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:958: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "co2pathway" is not present.
+10:10:19:974: Warning: xml: node "co2startYear" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "co2pathway" is not present.
+10:10:19:974: Warning: xml: node "co2startYear" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:974: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "co2pathway" is not present.
+10:10:19:990: Warning: xml: node "co2startYear" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "co2pathway" is not present.
+10:10:19:990: Warning: xml: node "co2startYear" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "co2pathway" is not present.
+10:10:19:990: Warning: xml: node "co2startYear" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:19:990: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "co2pathway" is not present.
+10:10:20:006: Warning: xml: node "co2startYear" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "co2pathway" is not present.
+10:10:20:006: Warning: xml: node "co2startYear" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:006: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "co2pathway" is not present.
+10:10:20:022: Warning: xml: node "co2startYear" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+10:10:20:022: Setup of climates: #loaded: 19 tables: "YOHOPIPO, BBBPIPO, CCRPIPO, SUABCO, SURIP, SUPILA, ..."
+10:10:20:022: setup of 19 climates performed.
+10:10:20:022: Loaded stand grid from  "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/gis/env.grid.txt" , #stands:  19
+10:10:20:022: created a grid of ResourceUnits: count= 190 number of RU-map-cells: 190
+10:10:20:022: Total stockable area of the landscape is 190 ha.
+10:10:20:038: Warning: xml: node "model.settings.grass.enabled" is not present.
+10:10:20:038: grass module not enabled
+10:10:20:053: Warning: xml: node "system.settings.threadCount" is not present.
+10:10:20:053: Multithreading enabled:  true thread count: 12
+10:10:20:053: Setup of seed dispersal maps finished.
+10:10:20:053: Warning: xml: node "model.management.abeEnabled" is not present.
+10:10:20:053: Warning: xml: node "model.settings.svdStates.enabled" is not present.
+10:10:20:053: Warning: xml: node "modules.bite.enabled" is not present.
+10:10:20:053: Timer "load project" : "197.799ms"
+10:10:20:053: setup database connection "out" to "C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/output/iland_output.sqlite"
+10:10:20:053: Setting up outputs...
+10:10:20:053: treeout::setup() called
+10:10:20:053: Warning: xml: node "output.treeremoved.filter" is not present.
+10:10:20:053: Warning: xml: node "output.stand.rufilter" is not present.
+10:10:20:053: Warning: xml: node "includeHarvest" is not present.
+10:10:20:053: Warning: xml: node "includeNatural" is not present.
+10:10:20:053: Warning: xml: node "dbhClasses" is not present.
+10:10:20:053: Warning: xml: node "enabled" is not present.
+10:10:20:053: Warning: xml: node "output.dynamicstand.condition" is not present.
+10:10:20:053: Warning: xml: node "output.dynamicstand.conditionRU" is not present.
+10:10:20:053: Warning: xml: node "enabled" is not present.
+10:10:20:053: Warning: xml: node "output.carbon.conditionRU" is not present.
+10:10:20:053: Warning: xml: node "output.carbonflow.condition" is not present.
+10:10:20:053: Warning: xml: node "output.carbonflow.conditionRU" is not present.
+10:10:20:053: Warning: xml: node "enabled" is not present (3rd occurrence, suppressed in the future).
+10:10:20:053: Warning: xml: node "output.water.conditionRU" is not present.
+10:10:20:053: SVDStateOutput: added extra columns for 2 species to the output dynamically.
+10:10:20:053: Warning: xml: node "shannonIndex" is not present.
+10:10:20:053: Warning: xml: node "abovegroundCarbon" is not present.
+10:10:20:053: Warning: xml: node "totalCarbon" is not present.
+10:10:20:053: Warning: xml: node "volume" is not present.
+10:10:20:053: Warning: xml: node "crownCover" is not present.
+10:10:20:053: Warning: xml: node "LAI" is not present.
+10:10:20:053: Warning: xml: node "basalArea" is not present.
+10:10:20:053: Warning: xml: node "stemDensity" is not present.
+10:10:20:053: Warning: xml: node "saplingDensity" is not present.
+10:10:20:053: Warning: xml: node "speciesProportions" is not present.
+10:10:20:053: Warning: xml: node "disturbanceHistory" is not present.
+10:10:20:053: SVDIndicatorOut: setup indicators:  0 active. Details:  "00000000000000000000000000000000"
+10:10:20:053: Warning: xml: node "condition" is not present.
+10:10:20:053: Warning: xml: node "condition" is not present.
+10:10:20:053: Warning: xml: node "fileName" is not present.
+10:10:20:053: processed 22 outputs:  QList("tree", "treeremoved", "stand", "landscape", "landscape_removed", "dynamicstand", "customagg", "production_month", "standdead", "management", "sapling", "saplingdetail", "carbon", "carbonflow", "soilinput", "water", "svdgpp", "svdstate", "svdindicator", "svduniquestate", "devstage", "ecoviz")
+10:10:20:053: Setup of outputs completed.
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/SEKI_demo_run/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+10:10:20:053: Warning: xml: node "model.initialization.randomFunction" is not present.
+10:10:20:149: finished setup of trees.
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.1243
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05949
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10404
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.29493
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.69005
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.30687
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.12297
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.95001
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.06862
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.42196
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17202
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.83035
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.7879
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.21794
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25571
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.49837
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.41644
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.58209
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.082
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.21241
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.41284
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.52188
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28152
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.39743
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.51825
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.06375
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.56848
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11791
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.74039
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.40919
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.52384
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.37605
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.34939
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.68071
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6044
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.69369
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.56959
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.26813
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.91311
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.46667
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65766
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.27726
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.2141
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.34057
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.16451
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11296
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00388
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.04435
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14287
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.09051
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.29822
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.03608
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17506
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.90781
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.57713
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.0301
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81953
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.06347
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.52168
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08725
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.98171
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.61212
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.30297
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28466
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.07726
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.70902
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.99685
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05813
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.35947
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.66029
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.45943
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.77592
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.49045
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.49706
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11909
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.04612
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.33294
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6944
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.58887
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00887
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.06637
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.97381
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18961
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.3498
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.52203
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65301
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.4461
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.9379
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17815
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.97599
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.7743
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11424
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.79737
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14047
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65493
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02833
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.39387
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.30172
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.45504
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.45806
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.57349
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.30156
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.27547
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.46804
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28031
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.41479
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.1304
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.42006
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.79605
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.66374
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.75561
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65124
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17412
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.4879
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.84801
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25392
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.04066
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.01063
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17619
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08234
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08294
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05199
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.12985
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.40035
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.04897
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.21984
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.36196
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.52844
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02574
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.06438
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.36164
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.84582
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11392
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.60912
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.80991
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.55568
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.1043
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.71967
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25073
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02128
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.72139
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.36514
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02337
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11251
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10504
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08253
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.14133
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28225
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.45595
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.7287
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18868
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.44175
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81401
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.5552
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.57512
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.63184
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.98969
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.89815
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.33067
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.47599
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.59406
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08422
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17059
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14921
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.31607
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.2918
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.98914
+10:10:20:170: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05217
+10:10:20:170: initialization of sapling: total created: 0
+10:10:20:170: opening transaction
+10:10:20:180: database transaction commited
+10:10:20:180: Settings not found in project file (more often than 3 times):
+10:10:20:180: =============================================================
+10:10:20:180: "model.settings.groundVegetationLAI" : 190 times
+10:10:20:180: "enabled" : 10 times
+10:10:20:180: "model.settings.groundVegetationPsiMin" : 190 times
+10:10:20:180: Model created.
+10:14:02:922: Model clear: attempting to clear 190 RU,  1 SpeciesSets.
+10:14:02:938: outputs closed
+10:14:02:938: Model resources freed.
+10:14:02:938: ModelController: Model destroyed.
