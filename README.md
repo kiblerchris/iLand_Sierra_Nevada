@@ -31,6 +31,10 @@ The light influence patterns (LIP) represent a lookup table of ray tracing outpu
 
 For the Sierra Nevada model implementation, the LIP files were calibrated using the [Tallo allometric database](https://doi.org/10.1111/gcb.16302), along with additional values from literature (see the `SEKI_LIP_and_init_calibration.Rmd` file). The intermediate files along with the final LIP files are provided in the `LIP` folder.
 
+## Project File
+
+The project file provided here performs a relatively straightforward implementation of iLand. It is the result of consultation with other WFFRC research groups, although the project files are not completely standardized across the collaborative. All disturbance modules are turned off, along with features like dynamic nitrogen cycling that require extensive parameterization. The landscape is currently set up in `standgrid` mode, where each 1 ha resource unit has its own climate and soil forcings. The resource units do not interact under the current parameterization. There are 10 replicates of each field plot (19 field plots X 10 replicates = 190 resource units), and each resource unit is entirely independent. The `torus` setting is activated, so any seeds that exit one side of the resource unit will reenter from the opposite side of the same resource unit.
+
 ## Useful Links
 
 * [Model home page](https://iland-model.org/startpage)
