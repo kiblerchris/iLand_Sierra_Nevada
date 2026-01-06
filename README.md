@@ -17,7 +17,7 @@ The model implementation is designed to replicate conifer forest dynamics across
 
 ## Climate
 
-The climate data are derived from the second version of Park Williams' downscaled climate products. The data set is not publicly available, but it is stored on [CyVerse](https://cyverse.org/) and is accessible to WFFRC members. The climate data processing was completed on CyVerse, but the code is available here. Individual climate records were extracted for each field plot.
+The climate data are derived from the second version of Park Williams' downscaled climate products. I compared Park's data set with DAYMET and GRIDMET, along with field measurements from HOBO sensors, and there was strong agreement across all data sets, suggesting that the gridded climate products are reliable and somewhat interchangeable. Park's data set is not publicly available, but it is stored on [CyVerse](https://cyverse.org/) and is accessible to WFFRC members. The climate data processing was completed on CyVerse, but the code is available here. Individual climate records were extracted for each field plot.
 
 ## Soil
 
