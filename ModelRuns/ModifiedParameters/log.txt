@@ -1,0 +1,2898 @@
+14:13:22:427: **************************************************
+14:13:22:427: project-file: "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/project_file.xml"
+14:13:22:427: started at:  "2025/07/07 14:13:22"
+14:13:22:427: iLand  2.0  ( "branch: main, version: aa9cf570, date: 18.07.2024" )
+14:13:22:427: **************************************************
+14:13:22:428: "extended debug checks disabled."
+14:13:22:428: current File Paths:
+14:13:22:428: "home" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199"
+14:13:22:428: "lip" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/lip"
+14:13:22:428: "exe" :  "C:/Users/kible/Documents/Research/iLand/iLandPackage2.0"
+14:13:22:429: "database" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/databases"
+14:13:22:429: "script" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199"
+14:13:22:429: "log" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199"
+14:13:22:429: "init" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init"
+14:13:22:429: "temp" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/temp"
+14:13:22:429: "output" :  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/output"
+14:13:22:429: Warning: xml: node "system.javascript.fileName" is not present.
+14:13:22:437: setup database connection "in" to "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/databases/SEKI_species.sqlite"
+14:13:22:442: setup database connection "climate" to "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/databases/SEKI_climate.sqlite"
+14:13:22:442: Warning: xml: node "model.climate.microclimate.enabled" is not present.
+14:13:22:443: "Settings:\ngrowthEnabled=1\nmortalityEnabled=1\nlightExtinctionCoefficient=0.5\nlightExtinctionCoefficientOpacity=0.5\ntemperatureTau=6\nepsilon=2.7\nairDensity=1.204\nuseDynamicAvailableNitrogen=0\nlatitude=36.56"
+14:13:22:443: Warning: xml: node "system.settings.responsive" is not present.
+14:13:22:444: The linearization of expressions is enabled (performance optimization).
+14:13:22:444: Loglevel set to Warning.
+14:13:22:444: Fire plugin created
+14:13:22:444: Wind plugin created
+14:13:22:444: Bark beetle plugin created
+14:13:22:444: "fire"
+14:13:22:444: "wind"
+14:13:22:444: "barkbeetle"
+14:13:22:444: "setup of the world: 1000x1900m with cell-size=2m and 200m buffer"
+14:13:22:444: setup grid rectangle: QRectF(-200,-200 1400x2300)
+14:13:22:445: setup of spatial location: x/y/z 0 0 0 rotation: 0
+14:13:22:446: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/lip/readerstamp.bin"
+14:13:22:448: attempting to load a species set from "species"
+14:13:22:449: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/lip/abla.bin"
+14:13:22:450: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/lip/pico.bin"
+14:13:22:456: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/lip/pico.bin"
+14:13:22:462: loading stamp file "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/lip/pipo.bin"
+14:13:22:463: loaded 4 active species:
+14:13:22:463: index, id, name
+14:13:22:463: 0 "abla" "Abies lasiocarpa"
+14:13:22:463: 1 "pico_high" "Pinus contorta [high elevation]"
+14:13:22:463: 2 "pico" "Pinus contorta [low elevation]"
+14:13:22:463: 3 "pipo" "Pinus ponderosa"
+14:13:22:464: Environment: climate: # of climate tables in environment file: 19
+14:13:22:471: Warning: xml: node "co2pathway" is not present.
+14:13:22:471: Warning: xml: node "co2startYear" is not present.
+14:13:22:471: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:471: Warning: xml: node "model.settings.groundVegetationLAI" is not present.
+14:13:22:471: Warning: xml: node "model.settings.groundVegetationPsiMin" is not present.
+14:13:22:471: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:471: Warning: xml: node "model.settings.groundVegetationLAI" is not present.
+14:13:22:471: Warning: xml: node "model.settings.groundVegetationPsiMin" is not present.
+14:13:22:471: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:471: Warning: xml: node "model.settings.groundVegetationLAI" is not present (3rd occurrence, suppressed in the future).
+14:13:22:471: Warning: xml: node "model.settings.groundVegetationPsiMin" is not present (3rd occurrence, suppressed in the future).
+14:13:22:471: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:471: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:472: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:472: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:472: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:472: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:472: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:478: Warning: xml: node "co2pathway" is not present.
+14:13:22:478: Warning: xml: node "co2startYear" is not present.
+14:13:22:478: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:478: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:479: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:479: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:479: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:479: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:479: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:479: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:480: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:480: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:486: Warning: xml: node "co2pathway" is not present.
+14:13:22:486: Warning: xml: node "co2startYear" is not present.
+14:13:22:486: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:486: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:486: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:487: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:487: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:487: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:487: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:487: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:487: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:487: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:493: Warning: xml: node "co2pathway" is not present.
+14:13:22:493: Warning: xml: node "co2startYear" is not present.
+14:13:22:493: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:493: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:494: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:501: Warning: xml: node "co2pathway" is not present.
+14:13:22:501: Warning: xml: node "co2startYear" is not present.
+14:13:22:501: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:501: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:501: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:501: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:501: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:501: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:501: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:502: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:502: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:502: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:508: Warning: xml: node "co2pathway" is not present.
+14:13:22:508: Warning: xml: node "co2startYear" is not present.
+14:13:22:508: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:508: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:508: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:508: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:508: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:508: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:508: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:509: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:509: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:509: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:515: Warning: xml: node "co2pathway" is not present.
+14:13:22:515: Warning: xml: node "co2startYear" is not present.
+14:13:22:515: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:515: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:515: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:516: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:516: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:516: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:516: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:516: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:516: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:516: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:522: Warning: xml: node "co2pathway" is not present.
+14:13:22:522: Warning: xml: node "co2startYear" is not present.
+14:13:22:522: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:522: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:522: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:523: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:523: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:523: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:523: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:523: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:523: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:523: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:530: Warning: xml: node "co2pathway" is not present.
+14:13:22:530: Warning: xml: node "co2startYear" is not present.
+14:13:22:530: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:530: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:530: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:530: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:530: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:531: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:531: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:531: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:531: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:531: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:537: Warning: xml: node "co2pathway" is not present.
+14:13:22:537: Warning: xml: node "co2startYear" is not present.
+14:13:22:537: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:537: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:537: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:537: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:537: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:538: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:538: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:538: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:538: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:538: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:544: Warning: xml: node "co2pathway" is not present.
+14:13:22:544: Warning: xml: node "co2startYear" is not present.
+14:13:22:544: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:544: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:544: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:544: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:545: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:545: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:545: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:545: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:545: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:546: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:551: Warning: xml: node "co2pathway" is not present.
+14:13:22:551: Warning: xml: node "co2startYear" is not present.
+14:13:22:551: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:551: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:551: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:551: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:552: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:552: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:552: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:552: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:553: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:553: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:558: Warning: xml: node "co2pathway" is not present.
+14:13:22:558: Warning: xml: node "co2startYear" is not present.
+14:13:22:558: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:559: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:559: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:559: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:559: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:560: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:560: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:560: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:560: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:560: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:566: Warning: xml: node "co2pathway" is not present.
+14:13:22:566: Warning: xml: node "co2startYear" is not present.
+14:13:22:566: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:567: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:567: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:567: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:567: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:567: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:567: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:568: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:568: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:568: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:574: Warning: xml: node "co2pathway" is not present.
+14:13:22:574: Warning: xml: node "co2startYear" is not present.
+14:13:22:574: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:574: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:574: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:574: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:574: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:574: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:575: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:575: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:575: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:575: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:581: Warning: xml: node "co2pathway" is not present.
+14:13:22:581: Warning: xml: node "co2startYear" is not present.
+14:13:22:581: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:581: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:581: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:581: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:581: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:581: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:582: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:582: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:582: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:582: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:587: Warning: xml: node "co2pathway" is not present.
+14:13:22:587: Warning: xml: node "co2startYear" is not present.
+14:13:22:587: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:588: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:588: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:588: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:588: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:588: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:588: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:589: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:589: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:589: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:595: Warning: xml: node "co2pathway" is not present.
+14:13:22:595: Warning: xml: node "co2startYear" is not present.
+14:13:22:595: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:595: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:595: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:595: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:595: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:596: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:596: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:596: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:596: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:596: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:602: Warning: xml: node "co2pathway" is not present.
+14:13:22:602: Warning: xml: node "co2startYear" is not present.
+14:13:22:602: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:602: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:603: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:603: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:603: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:603: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:603: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:603: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:604: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:604: Warning: xml: node "model.initialization.snags.otherAbovegroundFraction" is not present.
+14:13:22:604: Setup of climates: #loaded: 19 tables: "YOHOPIPO, BBBPIPO, CCRPIPO, SUABCO, SURIP, SUPILA, ..."
+14:13:22:604: setup of 19 climates performed.
+14:13:22:605: Loaded stand grid from  "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/gis/env.grid.txt" , #stands:  19
+14:13:22:605: created a grid of ResourceUnits: count= 190 number of RU-map-cells: 190
+14:13:22:605: Total stockable area of the landscape is 190 ha.
+14:13:22:628: Warning: xml: node "model.settings.grass.enabled" is not present.
+14:13:22:628: grass module not enabled
+14:13:22:632: Warning: xml: node "system.settings.threadCount" is not present.
+14:13:22:632: Multithreading enabled:  true thread count: 12
+14:13:22:632: created extra seed map and serotiny seed kernel for species "Pinus contorta [high elevation]" with fecundity factor 30
+14:13:22:632: Setup of seed dispersal maps finished.
+14:13:22:632: Warning: xml: node "model.management.abeEnabled" is not present.
+14:13:22:632: Warning: xml: node "model.settings.svdStates.enabled" is not present.
+14:13:22:632: Warning: xml: node "modules.bite.enabled" is not present.
+14:13:22:632: Timer "load project" : "203.697ms"
+14:13:22:632: setup database connection "out" to "C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/output/iland_output.sqlite"
+14:13:22:634: Setting up outputs...
+14:13:22:634: treeout::setup() called
+14:13:22:904: Warning: xml: node "output.treeremoved.filter" is not present.
+14:13:23:307: Warning: xml: node "output.stand.rufilter" is not present.
+14:13:23:308: Warning: xml: node "includeHarvest" is not present.
+14:13:23:308: Warning: xml: node "includeNatural" is not present.
+14:13:23:308: Warning: xml: node "dbhClasses" is not present.
+14:13:23:308: Warning: xml: node "enabled" is not present.
+14:13:23:308: Warning: xml: node "output.dynamicstand.condition" is not present.
+14:13:23:308: Warning: xml: node "output.dynamicstand.conditionRU" is not present.
+14:13:23:309: Warning: xml: node "enabled" is not present.
+14:13:23:355: Warning: xml: node "output.carbon.conditionRU" is not present.
+14:13:23:356: Warning: xml: node "output.carbonflow.condition" is not present.
+14:13:23:356: Warning: xml: node "output.carbonflow.conditionRU" is not present.
+14:13:23:356: Warning: xml: node "enabled" is not present (3rd occurrence, suppressed in the future).
+14:13:23:356: Warning: xml: node "output.water.conditionRU" is not present.
+14:13:23:356: SVDStateOutput: added extra columns for 4 species to the output dynamically.
+14:13:23:356: Warning: xml: node "shannonIndex" is not present.
+14:13:23:356: Warning: xml: node "abovegroundCarbon" is not present.
+14:13:23:356: Warning: xml: node "totalCarbon" is not present.
+14:13:23:356: Warning: xml: node "volume" is not present.
+14:13:23:356: Warning: xml: node "crownCover" is not present.
+14:13:23:356: Warning: xml: node "LAI" is not present.
+14:13:23:356: Warning: xml: node "basalArea" is not present.
+14:13:23:356: Warning: xml: node "stemDensity" is not present.
+14:13:23:356: Warning: xml: node "saplingDensity" is not present.
+14:13:23:356: Warning: xml: node "speciesProportions" is not present.
+14:13:23:356: Warning: xml: node "disturbanceHistory" is not present.
+14:13:23:356: SVDIndicatorOut: setup indicators:  0 active. Details:  "00000000000000000000000000000000"
+14:13:23:356: Warning: xml: node "condition" is not present.
+14:13:23:356: Warning: xml: node "condition" is not present.
+14:13:23:356: Warning: xml: node "fileName" is not present.
+14:13:23:356: processed 22 outputs:  QList("tree", "treeremoved", "stand", "landscape", "landscape_removed", "dynamicstand", "customagg", "production_month", "standdead", "management", "sapling", "saplingdetail", "carbon", "carbonflow", "soilinput", "water", "svdgpp", "svdstate", "svdindicator", "svduniquestate", "devstage", "ecoviz")
+14:13:23:356: Setup of outputs completed.
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=78, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+"load init file: file 'C:/Users/kible/Documents/Research/iLand/Model_Runs/run_199/init/tree_init.txt' tries to init trees below minimum height. hd=61, dbh=4."
+14:13:23:357: Warning: xml: node "model.initialization.randomFunction" is not present.
+14:13:23:452: finished setup of trees.
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.29467
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48823
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.53542
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.77121
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.13101
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.47863
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.71003
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.7291
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.87909
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6611
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.83137
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.69251
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.90631
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.02191
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14518
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.78966
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10251
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.34302
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.87552
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.21549
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81974
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.32935
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.4614
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.39267
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.71766
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08226
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.0556
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.27962
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.49199
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65437
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.02275
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.47476
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.15632
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10272
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.31559
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.22404
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.5438
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.417
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.30624
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.96216
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.5605
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.3395
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.89767
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.99523
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.36164
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18215
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.2384
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25314
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.37229
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.99875
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.3607
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.24056
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.38202
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.67535
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.144
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11184
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.95509
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.56884
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81663
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.26345
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00238
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.20566
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.20729
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00244
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.61298
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.40338
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.50623
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.38357
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.16421
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.31513
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.01604
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.399
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.31017
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.97148
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.42277
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17881
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28234
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65233
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.07525
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.73484
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18171
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.35908
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.19277
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.96147
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08772
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.27248
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.15212
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.59851
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6727
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.77016
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10988
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.29425
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.92903
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.21877
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28809
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.14854
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.23346
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.43896
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.57309
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.35583
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.276
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.07535
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.73952
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10031
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.0511
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.32481
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.5646
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.1106
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.33438
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.34044
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.13649
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.98841
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.39964
+14:13:23:462: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.99628
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.41063
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14584
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.15145
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.07494
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81199
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.51497
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17664
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.49945
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.16235
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.0279
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.62627
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02344
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.7133
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.33245
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.61396
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.47095
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.12484
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.17124
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.45738
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11238
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.68926
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.47622
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.89901
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.82946
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10757
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.07564
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10779
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.15963
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48872
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00187
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.52152
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.13427
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.67454
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02158
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.54772
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.40988
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.37349
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48643
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.72878
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.15797
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.32134
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.2013
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.24129
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.00998
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.22871
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18362
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.19321
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.28085
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.38547
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.20119
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.43793
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.26011
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.83889
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00667
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05367
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.2632
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.02261
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.15752
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.36418
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.0033
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.73514
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.12598
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51672
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.8733
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.11757
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.21256
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.36874
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.57608
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.0933
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.66564
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.07451
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.64889
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.56696
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.77357
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.96058
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00392
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65819
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.63152
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25522
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.92073
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.92076
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.88075
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.58868
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.88578
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.27657
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.26735
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.64198
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.51697
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18093
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28028
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.4835
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.63577
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.01597
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.29576
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17711
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.00254
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.39544
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.23228
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25277
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.04061
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48803
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.97109
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.55995
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.19933
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.35329
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.38118
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05906
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14036
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.3853
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14245
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.47534
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.43195
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.853
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.16973
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25772
+14:13:23:463: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6182
+14:13:23:464: initialization of sapling: total created: 0
+14:13:23:470: opening transaction
+14:13:23:473: database transaction commited
+14:13:23:475: Settings not found in project file (more often than 3 times):
+14:13:23:475: =============================================================
+14:13:23:475: "model.settings.groundVegetationLAI" : 190 times
+14:13:23:475: "model.settings.groundVegetationPsiMin" : 190 times
+14:13:23:475: "enabled" : 10 times
+14:13:23:475: Model created.
+14:13:25:689: ModelControler: runloop started.
+14:13:25:689: "14:13:25:" ModelController: run year 1
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.29467
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.87909
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48823
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.47863
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.69251
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.7291
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.71003
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.53542
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6611
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.77121
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.90631
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.83137
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14518
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10251
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.78966
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.02191
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.34302
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.87552
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.21549
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81974
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.32935
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.4614
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.39267
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08226
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.71766
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.0556
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.49199
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.13101
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65437
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.02275
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.15632
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.27962
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.31559
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.3395
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.417
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.5438
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.5605
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.96216
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.2384
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.99523
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.47476
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.89767
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18215
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10272
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.22404
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.30624
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.37229
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.38202
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.67535
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.56884
+14:13:25:694: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11184
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.144
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00238
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.95509
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.36164
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00244
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.20729
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.26345
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25314
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.20566
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81663
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.40338
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.61298
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.99875
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.50623
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.3607
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.16421
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.24056
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.31513
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.01604
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.399
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.97148
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17881
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.38357
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28234
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18171
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65233
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.96147
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.07525
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.73484
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.19277
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.08772
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.27248
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.35908
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.15212
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.59851
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6727
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.77016
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10988
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.92903
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.31017
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.43896
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.57309
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.1106
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.39964
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.42277
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.07535
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.276
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.21877
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.29425
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.34044
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.23346
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.13649
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.32481
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.35583
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.14854
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28809
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.73952
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.98841
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.99628
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10031
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.5646
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.41063
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.0511
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.33438
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.07494
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.51497
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.0279
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.49945
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.16235
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14584
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.61396
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.15145
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02344
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.7133
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.47095
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.33245
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.45738
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.17124
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.62627
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.11238
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.12484
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.68926
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.89901
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.47622
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.82946
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10757
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.07564
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.10779
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.15963
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48872
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00187
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.52152
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.67454
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.13427
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.02158
+14:13:25:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.54772
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.40988
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.37349
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48643
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.2013
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.15797
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.32134
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.81199
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17664
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.19321
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.00998
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.72878
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00667
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18362
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.28085
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.24129
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.02261
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.38547
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.43793
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.20119
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.22871
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.73514
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51672
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.11757
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.36418
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.12598
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.0933
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.36874
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.83889
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.0033
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.26011
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05367
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.8733
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.21256
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.15752
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.57608
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.64889
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.2632
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.77357
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.56696
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.66564
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.07451
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.63152
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.65819
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25522
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.92073
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.92076
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.58868
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.96058
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.88578
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.28028
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.26735
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.00392
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.18093
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.88075
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.27657
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.51697
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.00254
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.4835
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.01597
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.64198
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.17711
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.63577
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.29576
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.39544
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.23228
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.04061
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25277
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.48803
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.97109
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.55995
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.19933
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.38118
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14036
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.14245
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.35329
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.3853
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.43195
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.47534
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.05906
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.853
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.16973
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.25772
+14:13:25:696: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  4.6182
+14:13:25:780: opening transaction
+14:13:26:716: Timer "TreeOut::exec()" : "935.911ms"
+14:13:26:727: Timer "outputs" : "946.646ms"
+14:13:26:727: Timer "Model::runYear()" : "1038.31ms"
+14:13:26:745: Timer "ModelController:runYear" : "1056.15ms"
+14:13:26:756: "14:13:26:" ModelController: run year 2
+14:13:26:812: "14:13:26:" ModelController: run year 3
+14:13:26:878: "14:13:26:" ModelController: run year 4
+14:13:26:957: "14:13:26:" ModelController: run year 5
+14:13:27:034: "14:13:27:" ModelController: run year 6
+14:13:27:102: "14:13:27:" ModelController: run year 7
+14:13:27:169: "14:13:27:" ModelController: run year 8
+14:13:27:260: "14:13:27:" ModelController: run year 9
+14:13:27:351: "14:13:27:" ModelController: run year 10
+14:13:27:437: "14:13:27:" ModelController: run year 11
+14:13:27:524: "14:13:27:" ModelController: run year 12
+14:13:27:612: "14:13:27:" ModelController: run year 13
+14:13:27:698: "14:13:27:" ModelController: run year 14
+14:13:27:780: "14:13:27:" ModelController: run year 15
+14:13:27:865: "14:13:27:" ModelController: run year 16
+14:13:27:951: SeedDispersal: created seed map for sapling trees for species "Pinus ponderosa"
+14:13:27:964: "14:13:27:" ModelController: run year 17
+14:13:28:028: "14:13:28:" ModelController: run year 18
+14:13:28:087: "14:13:28:" ModelController: run year 19
+14:13:28:152: "14:13:28:" ModelController: run year 20
+14:13:28:223: "14:13:28:" ModelController: run year 21
+14:13:28:283: "14:13:28:" ModelController: run year 22
+14:13:28:343: "14:13:28:" ModelController: run year 23
+14:13:28:413: "14:13:28:" ModelController: run year 24
+14:13:28:488: "14:13:28:" ModelController: run year 25
+14:13:28:572: "14:13:28:" ModelController: run year 26
+14:13:28:633: "14:13:28:" ModelController: run year 27
+14:13:28:694: "14:13:28:" ModelController: run year 28
+14:13:28:757: "14:13:28:" ModelController: run year 29
+14:13:28:818: "14:13:28:" ModelController: run year 30
+14:13:28:875: "14:13:28:" ModelController: run year 31
+14:13:28:935: "14:13:28:" ModelController: run year 32
+14:13:28:988: "14:13:28:" ModelController: run year 33
+14:13:29:041: "14:13:29:" ModelController: run year 34
+14:13:29:103: "14:13:29:" ModelController: run year 35
+14:13:29:150: "14:13:29:" ModelController: run year 36
+14:13:29:200: "14:13:29:" ModelController: run year 37
+14:13:29:253: "14:13:29:" ModelController: run year 38
+14:13:29:304: "14:13:29:" ModelController: run year 39
+14:13:29:353: "14:13:29:" ModelController: run year 40
+14:13:29:416: "14:13:29:" ModelController: run year 41
+14:13:29:508: "14:13:29:" ModelController: run year 42
+14:13:29:595: "14:13:29:" ModelController: run year 43
+14:13:29:655: "14:13:29:" ModelController: run year 44
+14:13:29:749: "14:13:29:" ModelController: run year 45
+14:13:29:749: restart of climate table
+14:13:29:749: restart of climate table
+14:13:29:749: restart of climate table
+14:13:29:749: restart of climate table
+14:13:29:749: restart of climate table
+14:13:29:750: restart of climate table
+14:13:29:750: restart of climate table
+14:13:29:750: restart of climate table
+14:13:29:750: restart of climate table
+14:13:29:750: restart of climate table
+14:13:29:750: restart of climate table
+14:13:29:751: restart of climate table
+14:13:29:751: restart of climate table
+14:13:29:751: restart of climate table
+14:13:29:751: restart of climate table
+14:13:29:751: restart of climate table
+14:13:29:751: restart of climate table
+14:13:29:752: restart of climate table
+14:13:29:752: restart of climate table
+14:13:29:819: SeedDispersal: created seed map for sapling trees for species "Abies lasiocarpa"
+14:13:29:832: "14:13:29:" ModelController: run year 46
+14:13:29:903: "14:13:29:" ModelController: run year 47
+14:13:29:956: "14:13:29:" ModelController: run year 48
+14:13:30:016: "14:13:30:" ModelController: run year 49
+14:13:30:067: "14:13:30:" ModelController: run year 50
+14:13:30:117: "14:13:30:" ModelController: run year 51
+14:13:30:168: "14:13:30:" ModelController: run year 52
+14:13:30:228: "14:13:30:" ModelController: run year 53
+14:13:30:280: "14:13:30:" ModelController: run year 54
+14:13:30:338: "14:13:30:" ModelController: run year 55
+14:13:30:393: "14:13:30:" ModelController: run year 56
+14:13:30:400: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51841
+14:13:30:401: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.59883
+14:13:30:448: "14:13:30:" ModelController: run year 57
+14:13:30:457: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51841
+14:13:30:457: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.59883
+14:13:30:507: "14:13:30:" ModelController: run year 58
+14:13:30:516: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51841
+14:13:30:517: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.59883
+14:13:30:578: "14:13:30:" ModelController: run year 59
+14:13:30:586: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51841
+14:13:30:587: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.59883
+14:13:30:644: "14:13:30:" ModelController: run year 60
+14:13:30:653: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.86866
+14:13:30:729: "14:13:30:" ModelController: run year 61
+14:13:30:795: "14:13:30:" ModelController: run year 62
+14:13:30:854: "14:13:30:" ModelController: run year 63
+14:13:30:916: "14:13:30:" ModelController: run year 64
+14:13:30:981: "14:13:30:" ModelController: run year 65
+14:13:31:043: "14:13:31:" ModelController: run year 66
+14:13:31:114: "14:13:31:" ModelController: run year 67
+14:13:31:204: "14:13:31:" ModelController: run year 68
+14:13:31:312: Timer "Model::runYear()" : "107.887ms"
+14:13:31:313: Timer "ModelController:runYear" : "108.225ms"
+14:13:31:320: "14:13:31:" ModelController: run year 69
+14:13:31:417: "14:13:31:" ModelController: run year 70
+14:13:31:428: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.8083
+14:13:31:496: "14:13:31:" ModelController: run year 71
+14:13:31:576: "14:13:31:" ModelController: run year 72
+14:13:31:586: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.4542
+14:13:31:654: "14:13:31:" ModelController: run year 73
+14:13:31:663: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.54736
+14:13:31:730: "14:13:31:" ModelController: run year 74
+14:13:31:740: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.54736
+14:13:31:799: "14:13:31:" ModelController: run year 75
+14:13:31:809: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.8733
+14:13:31:809: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.54736
+14:13:31:869: "14:13:31:" ModelController: run year 76
+14:13:31:934: "14:13:31:" ModelController: run year 77
+14:13:32:011: "14:13:32:" ModelController: run year 78
+14:13:32:087: "14:13:32:" ModelController: run year 79
+14:13:32:161: "14:13:32:" ModelController: run year 80
+14:13:32:236: "14:13:32:" ModelController: run year 81
+14:13:32:247: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.59248
+14:13:32:307: "14:13:32:" ModelController: run year 82
+14:13:32:317: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.59248
+14:13:32:375: "14:13:32:" ModelController: run year 83
+14:13:32:386: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.59248
+14:13:32:448: "14:13:32:" ModelController: run year 84
+14:13:32:533: "14:13:32:" ModelController: run year 85
+14:13:32:654: Timer "Model::runYear()" : "120.198ms"
+14:13:32:654: Timer "ModelController:runYear" : "120.588ms"
+14:13:32:662: "14:13:32:" ModelController: run year 86
+14:13:32:793: Timer "Model::runYear()" : "130.923ms"
+14:13:32:793: Timer "ModelController:runYear" : "131.294ms"
+14:13:32:801: "14:13:32:" ModelController: run year 87
+14:13:32:890: "14:13:32:" ModelController: run year 88
+14:13:32:982: "14:13:32:" ModelController: run year 89
+14:13:32:982: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:983: restart of climate table
+14:13:32:984: restart of climate table
+14:13:32:984: restart of climate table
+14:13:32:984: restart of climate table
+14:13:32:984: restart of climate table
+14:13:32:984: restart of climate table
+14:13:32:984: restart of climate table
+14:13:32:993: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.24938
+14:13:32:995: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.0347
+14:13:33:077: "14:13:33:" ModelController: run year 90
+14:13:33:087: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.24938
+14:13:33:088: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.0347
+14:13:33:164: "14:13:33:" ModelController: run year 91
+14:13:33:241: "14:13:33:" ModelController: run year 92
+14:13:33:325: "14:13:33:" ModelController: run year 93
+14:13:33:396: "14:13:33:" ModelController: run year 94
+14:13:33:469: "14:13:33:" ModelController: run year 95
+14:13:33:548: "14:13:33:" ModelController: run year 96
+14:13:33:644: "14:13:33:" ModelController: run year 97
+14:13:33:735: "14:13:33:" ModelController: run year 98
+14:13:33:747: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.92479
+14:13:33:817: "14:13:33:" ModelController: run year 99
+14:13:33:830: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.98496
+14:13:33:904: "14:13:33:" ModelController: run year 100
+14:13:33:916: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.98496
+14:13:35:389: Timer "TreeOut::exec()" : "1406.28ms"
+14:13:35:841: Timer "outputs" : "1858.3ms"
+14:13:35:841: Timer "Model::runYear()" : "1937.64ms"
+14:13:35:842: Timer "ModelController:runYear" : "1938.18ms"
+14:13:35:851: "14:13:35:" ModelController: run year 101
+14:13:35:863: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.98496
+14:13:35:949: "14:13:35:" ModelController: run year 102
+14:13:35:962: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.98496
+14:13:36:068: Timer "Model::runYear()" : "118.811ms"
+14:13:36:069: Timer "ModelController:runYear" : "119.138ms"
+14:13:36:076: "14:13:36:" ModelController: run year 103
+14:13:36:180: "14:13:36:" ModelController: run year 104
+14:13:36:303: Timer "Model::runYear()" : "122.726ms"
+14:13:36:303: Timer "ModelController:runYear" : "123.062ms"
+14:13:36:312: "14:13:36:" ModelController: run year 105
+14:13:36:405: "14:13:36:" ModelController: run year 106
+14:13:36:508: Timer "Model::runYear()" : "103.457ms"
+14:13:36:508: Timer "ModelController:runYear" : "103.86ms"
+14:13:36:516: "14:13:36:" ModelController: run year 107
+14:13:36:528: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.54824
+14:13:36:603: "14:13:36:" ModelController: run year 108
+14:13:36:692: "14:13:36:" ModelController: run year 109
+14:13:36:773: "14:13:36:" ModelController: run year 110
+14:13:36:874: "14:13:36:" ModelController: run year 111
+14:13:36:995: Timer "Model::runYear()" : "120.628ms"
+14:13:36:995: Timer "ModelController:runYear" : "120.961ms"
+14:13:37:003: "14:13:37:" ModelController: run year 112
+14:13:37:133: Timer "growTrees()" : "114.211ms"
+14:13:37:148: Timer "Model::runYear()" : "145.125ms"
+14:13:37:149: Timer "ModelController:runYear" : "145.51ms"
+14:13:37:157: "14:13:37:" ModelController: run year 113
+14:13:37:256: "14:13:37:" ModelController: run year 114
+14:13:37:360: "14:13:37:" ModelController: run year 115
+14:13:37:463: Timer "Model::runYear()" : "103.81ms"
+14:13:37:464: Timer "ModelController:runYear" : "104.446ms"
+14:13:37:472: "14:13:37:" ModelController: run year 116
+14:13:37:572: "14:13:37:" ModelController: run year 117
+14:13:37:665: "14:13:37:" ModelController: run year 118
+14:13:37:747: "14:13:37:" ModelController: run year 119
+14:13:37:824: "14:13:37:" ModelController: run year 120
+14:13:37:903: "14:13:37:" ModelController: run year 121
+14:13:37:988: "14:13:37:" ModelController: run year 122
+14:13:38:113: Timer "growTrees()" : "109.946ms"
+14:13:38:129: Timer "Model::runYear()" : "140.722ms"
+14:13:38:129: Timer "ModelController:runYear" : "141.056ms"
+14:13:38:137: "14:13:38:" ModelController: run year 123
+14:13:38:244: "14:13:38:" ModelController: run year 124
+14:13:38:323: "14:13:38:" ModelController: run year 125
+14:13:38:403: "14:13:38:" ModelController: run year 126
+14:13:38:482: "14:13:38:" ModelController: run year 127
+14:13:38:573: "14:13:38:" ModelController: run year 128
+14:13:38:669: "14:13:38:" ModelController: run year 129
+14:13:38:799: Timer "Model::runYear()" : "130.118ms"
+14:13:38:799: Timer "ModelController:runYear" : "130.461ms"
+14:13:38:807: "14:13:38:" ModelController: run year 130
+14:13:38:929: Timer "growTrees()" : "106.388ms"
+14:13:38:946: Timer "Model::runYear()" : "138.748ms"
+14:13:38:947: Timer "ModelController:runYear" : "139.082ms"
+14:13:38:954: "14:13:38:" ModelController: run year 131
+14:13:39:071: Timer "Model::runYear()" : "116.647ms"
+14:13:39:071: Timer "ModelController:runYear" : "116.976ms"
+14:13:39:079: "14:13:39:" ModelController: run year 132
+14:13:39:166: "14:13:39:" ModelController: run year 133
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:166: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:167: restart of climate table
+14:13:39:248: "14:13:39:" ModelController: run year 134
+14:13:39:259: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.19448
+14:13:39:330: "14:13:39:" ModelController: run year 135
+14:13:39:407: "14:13:39:" ModelController: run year 136
+14:13:39:418: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.91492
+14:13:39:490: "14:13:39:" ModelController: run year 137
+14:13:39:502: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.91492
+14:13:39:569: "14:13:39:" ModelController: run year 138
+14:13:39:580: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.91492
+14:13:39:651: "14:13:39:" ModelController: run year 139
+14:13:39:663: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.91492
+14:13:39:733: "14:13:39:" ModelController: run year 140
+14:13:39:831: "14:13:39:" ModelController: run year 141
+14:13:39:933: "14:13:39:" ModelController: run year 142
+14:13:40:019: "14:13:40:" ModelController: run year 143
+14:13:40:111: "14:13:40:" ModelController: run year 144
+14:13:40:206: "14:13:40:" ModelController: run year 145
+14:13:40:306: "14:13:40:" ModelController: run year 146
+14:13:40:416: Timer "Model::runYear()" : "110.947ms"
+14:13:40:417: Timer "ModelController:runYear" : "111.304ms"
+14:13:40:425: "14:13:40:" ModelController: run year 147
+14:13:40:527: "14:13:40:" ModelController: run year 148
+14:13:40:635: Timer "Model::runYear()" : "107.28ms"
+14:13:40:635: Timer "ModelController:runYear" : "107.676ms"
+14:13:40:643: "14:13:40:" ModelController: run year 149
+14:13:40:728: --- little break ---- (after  15039 ms).
+14:13:40:735: "14:13:40:" ModelController: run year 150
+14:13:40:839: Timer "Model::runYear()" : "104.091ms"
+14:13:40:840: Timer "ModelController:runYear" : "104.657ms"
+14:13:40:848: "14:13:40:" ModelController: run year 151
+14:13:40:938: "14:13:40:" ModelController: run year 152
+14:13:41:030: "14:13:41:" ModelController: run year 153
+14:13:41:112: "14:13:41:" ModelController: run year 154
+14:13:41:210: "14:13:41:" ModelController: run year 155
+14:13:41:319: Timer "Model::runYear()" : "109.231ms"
+14:13:41:320: Timer "ModelController:runYear" : "109.636ms"
+14:13:41:328: "14:13:41:" ModelController: run year 156
+14:13:41:452: Timer "Model::runYear()" : "123.817ms"
+14:13:41:452: Timer "ModelController:runYear" : "124.313ms"
+14:13:41:460: "14:13:41:" ModelController: run year 157
+14:13:41:559: "14:13:41:" ModelController: run year 158
+14:13:41:662: "14:13:41:" ModelController: run year 159
+14:13:41:770: "14:13:41:" ModelController: run year 160
+14:13:41:866: "14:13:41:" ModelController: run year 161
+14:13:41:955: "14:13:41:" ModelController: run year 162
+14:13:42:041: "14:13:42:" ModelController: run year 163
+14:13:42:125: "14:13:42:" ModelController: run year 164
+14:13:42:207: "14:13:42:" ModelController: run year 165
+14:13:42:298: "14:13:42:" ModelController: run year 166
+14:13:42:433: Timer "growTrees()" : "119.08ms"
+14:13:42:447: Timer "Model::runYear()" : "149.606ms"
+14:13:42:448: Timer "ModelController:runYear" : "149.978ms"
+14:13:42:455: "14:13:42:" ModelController: run year 167
+14:13:42:557: Timer "Model::runYear()" : "101.21ms"
+14:13:42:557: Timer "ModelController:runYear" : "101.558ms"
+14:13:42:565: "14:13:42:" ModelController: run year 168
+14:13:42:646: "14:13:42:" ModelController: run year 169
+14:13:42:725: "14:13:42:" ModelController: run year 170
+14:13:42:807: "14:13:42:" ModelController: run year 171
+14:13:42:819: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.56562
+14:13:42:900: "14:13:42:" ModelController: run year 172
+14:13:42:999: "14:13:42:" ModelController: run year 173
+14:13:43:124: Timer "growTrees()" : "110.013ms"
+14:13:43:141: Timer "Model::runYear()" : "141.939ms"
+14:13:43:141: Timer "ModelController:runYear" : "142.333ms"
+14:13:43:149: "14:13:43:" ModelController: run year 174
+14:13:43:294: Timer "growTrees()" : "130.868ms"
+14:13:43:320: Timer "Model::runYear()" : "171.414ms"
+14:13:43:321: Timer "ModelController:runYear" : "171.777ms"
+14:13:43:328: "14:13:43:" ModelController: run year 175
+14:13:43:453: Timer "growTrees()" : "110.211ms"
+14:13:43:467: Timer "Model::runYear()" : "139.019ms"
+14:13:43:467: Timer "ModelController:runYear" : "139.383ms"
+14:13:43:475: "14:13:43:" ModelController: run year 176
+14:13:43:567: "14:13:43:" ModelController: run year 177
+14:13:43:567: restart of climate table
+14:13:43:567: restart of climate table
+14:13:43:567: restart of climate table
+14:13:43:567: restart of climate table
+14:13:43:567: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:568: restart of climate table
+14:13:43:569: restart of climate table
+14:13:43:569: restart of climate table
+14:13:43:648: "14:13:43:" ModelController: run year 178
+14:13:43:734: "14:13:43:" ModelController: run year 179
+14:13:43:817: "14:13:43:" ModelController: run year 180
+14:13:43:898: "14:13:43:" ModelController: run year 181
+14:13:43:979: "14:13:43:" ModelController: run year 182
+14:13:44:060: "14:13:44:" ModelController: run year 183
+14:13:44:146: "14:13:44:" ModelController: run year 184
+14:13:44:242: "14:13:44:" ModelController: run year 185
+14:13:44:340: "14:13:44:" ModelController: run year 186
+14:13:44:423: "14:13:44:" ModelController: run year 187
+14:13:44:516: "14:13:44:" ModelController: run year 188
+14:13:44:611: "14:13:44:" ModelController: run year 189
+14:13:44:713: "14:13:44:" ModelController: run year 190
+14:13:44:816: Timer "Model::runYear()" : "103.062ms"
+14:13:44:817: Timer "ModelController:runYear" : "103.443ms"
+14:13:44:825: "14:13:44:" ModelController: run year 191
+14:13:44:917: "14:13:44:" ModelController: run year 192
+14:13:45:019: "14:13:45:" ModelController: run year 193
+14:13:45:103: "14:13:45:" ModelController: run year 194
+14:13:45:222: Timer "Model::runYear()" : "119.261ms"
+14:13:45:222: Timer "ModelController:runYear" : "119.728ms"
+14:13:45:231: "14:13:45:" ModelController: run year 195
+14:13:45:316: "14:13:45:" ModelController: run year 196
+14:13:45:402: "14:13:45:" ModelController: run year 197
+14:13:45:480: "14:13:45:" ModelController: run year 198
+14:13:45:576: "14:13:45:" ModelController: run year 199
+14:13:45:681: "14:13:45:" ModelController: run year 200
+14:13:45:693: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.56727
+14:13:47:146: Timer "TreeOut::exec()" : "1360.55ms"
+14:13:47:545: Timer "outputs" : "1759.41ms"
+14:13:47:545: Timer "Model::runYear()" : "1863.16ms"
+14:13:47:546: Timer "ModelController:runYear" : "1863.96ms"
+14:13:47:554: "14:13:47:" ModelController: run year 201
+14:13:47:565: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.20431
+14:13:47:566: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.78308
+14:13:47:642: "14:13:47:" ModelController: run year 202
+14:13:47:652: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.20431
+14:13:47:653: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.78308
+14:13:47:725: "14:13:47:" ModelController: run year 203
+14:13:47:737: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.46815
+14:13:47:824: "14:13:47:" ModelController: run year 204
+14:13:47:835: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.62789
+14:13:47:836: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.46815
+14:13:47:915: "14:13:47:" ModelController: run year 205
+14:13:47:998: "14:13:47:" ModelController: run year 206
+14:13:48:071: "14:13:48:" ModelController: run year 207
+14:13:48:144: "14:13:48:" ModelController: run year 208
+14:13:48:225: "14:13:48:" ModelController: run year 209
+14:13:48:302: "14:13:48:" ModelController: run year 210
+14:13:48:420: Timer "growTrees()" : "103.531ms"
+14:13:48:435: Timer "Model::runYear()" : "132.435ms"
+14:13:48:435: Timer "ModelController:runYear" : "132.803ms"
+14:13:48:443: "14:13:48:" ModelController: run year 211
+14:13:48:548: "14:13:48:" ModelController: run year 212
+14:13:48:622: "14:13:48:" ModelController: run year 213
+14:13:48:694: "14:13:48:" ModelController: run year 214
+14:13:48:769: "14:13:48:" ModelController: run year 215
+14:13:48:851: "14:13:48:" ModelController: run year 216
+14:13:48:943: "14:13:48:" ModelController: run year 217
+14:13:49:060: Timer "Model::runYear()" : "117.373ms"
+14:13:49:060: Timer "ModelController:runYear" : "117.754ms"
+14:13:49:068: "14:13:49:" ModelController: run year 218
+14:13:49:185: Timer "growTrees()" : "102.268ms"
+14:13:49:204: Timer "Model::runYear()" : "135.267ms"
+14:13:49:204: Timer "ModelController:runYear" : "135.698ms"
+14:13:49:212: "14:13:49:" ModelController: run year 219
+14:13:49:324: Timer "Model::runYear()" : "112.091ms"
+14:13:49:325: Timer "ModelController:runYear" : "112.478ms"
+14:13:49:332: "14:13:49:" ModelController: run year 220
+14:13:49:410: "14:13:49:" ModelController: run year 221
+14:13:49:410: restart of climate table
+14:13:49:410: restart of climate table
+14:13:49:410: restart of climate table
+14:13:49:410: restart of climate table
+14:13:49:410: restart of climate table
+14:13:49:410: restart of climate table
+14:13:49:410: restart of climate table
+14:13:49:410: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:411: restart of climate table
+14:13:49:421: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.43444
+14:13:49:479: "14:13:49:" ModelController: run year 222
+14:13:49:491: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.43444
+14:13:49:549: "14:13:49:" ModelController: run year 223
+14:13:49:560: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.43444
+14:13:49:627: "14:13:49:" ModelController: run year 224
+14:13:49:697: "14:13:49:" ModelController: run year 225
+14:13:49:769: "14:13:49:" ModelController: run year 226
+14:13:49:839: "14:13:49:" ModelController: run year 227
+14:13:49:909: "14:13:49:" ModelController: run year 228
+14:13:49:991: "14:13:49:" ModelController: run year 229
+14:13:50:078: "14:13:50:" ModelController: run year 230
+14:13:50:089: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.27864
+14:13:50:150: "14:13:50:" ModelController: run year 231
+14:13:50:236: "14:13:50:" ModelController: run year 232
+14:13:50:247: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.0077
+14:13:50:326: "14:13:50:" ModelController: run year 233
+14:13:50:414: "14:13:50:" ModelController: run year 234
+14:13:50:501: "14:13:50:" ModelController: run year 235
+14:13:50:512: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.9546
+14:13:50:582: "14:13:50:" ModelController: run year 236
+14:13:50:662: "14:13:50:" ModelController: run year 237
+14:13:50:739: "14:13:50:" ModelController: run year 238
+14:13:50:844: "14:13:50:" ModelController: run year 239
+14:13:50:919: "14:13:50:" ModelController: run year 240
+14:13:50:998: "14:13:50:" ModelController: run year 241
+14:13:51:087: "14:13:51:" ModelController: run year 242
+14:13:51:098: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.03687
+14:13:51:099: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.00876
+14:13:51:175: "14:13:51:" ModelController: run year 243
+14:13:51:185: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.00876
+14:13:51:185: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.03687
+14:13:51:279: "14:13:51:" ModelController: run year 244
+14:13:51:290: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.03687
+14:13:51:373: "14:13:51:" ModelController: run year 245
+14:13:51:383: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.46398
+14:13:51:463: "14:13:51:" ModelController: run year 246
+14:13:51:473: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.46398
+14:13:51:546: "14:13:51:" ModelController: run year 247
+14:13:51:557: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.1011
+14:13:51:634: "14:13:51:" ModelController: run year 248
+14:13:51:722: "14:13:51:" ModelController: run year 249
+14:13:51:796: --- little break ---- (after  11068 ms).
+14:13:51:804: "14:13:51:" ModelController: run year 250
+14:13:51:879: "14:13:51:" ModelController: run year 251
+14:13:51:949: "14:13:51:" ModelController: run year 252
+14:13:52:015: "14:13:52:" ModelController: run year 253
+14:13:52:085: "14:13:52:" ModelController: run year 254
+14:13:52:206: Timer "Model::runYear()" : "121.258ms"
+14:13:52:206: Timer "ModelController:runYear" : "121.596ms"
+14:13:52:214: "14:13:52:" ModelController: run year 255
+14:13:52:226: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.81504
+14:13:52:321: Timer "Model::runYear()" : "107.081ms"
+14:13:52:321: Timer "ModelController:runYear" : "107.439ms"
+14:13:52:330: "14:13:52:" ModelController: run year 256
+14:13:52:341: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.28229
+14:13:52:404: "14:13:52:" ModelController: run year 257
+14:13:52:482: "14:13:52:" ModelController: run year 258
+14:13:52:556: "14:13:52:" ModelController: run year 259
+14:13:52:639: "14:13:52:" ModelController: run year 260
+14:13:52:724: "14:13:52:" ModelController: run year 261
+14:13:52:826: Timer "Model::runYear()" : "102.818ms"
+14:13:52:827: Timer "ModelController:runYear" : "103.237ms"
+14:13:52:834: "14:13:52:" ModelController: run year 262
+14:13:52:962: Timer "Model::runYear()" : "127.701ms"
+14:13:52:963: Timer "ModelController:runYear" : "128.104ms"
+14:13:52:970: "14:13:52:" ModelController: run year 263
+14:13:53:075: "14:13:53:" ModelController: run year 264
+14:13:53:148: "14:13:53:" ModelController: run year 265
+14:13:53:148: restart of climate table
+14:13:53:148: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:149: restart of climate table
+14:13:53:150: restart of climate table
+14:13:53:150: restart of climate table
+14:13:53:150: restart of climate table
+14:13:53:150: restart of climate table
+14:13:53:150: restart of climate table
+14:13:53:158: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.31279
+14:13:53:218: "14:13:53:" ModelController: run year 266
+14:13:53:230: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.0438
+14:13:53:295: "14:13:53:" ModelController: run year 267
+14:13:53:359: "14:13:53:" ModelController: run year 268
+14:13:53:431: "14:13:53:" ModelController: run year 269
+14:13:53:495: "14:13:53:" ModelController: run year 270
+14:13:53:567: "14:13:53:" ModelController: run year 271
+14:13:53:641: "14:13:53:" ModelController: run year 272
+14:13:53:653: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.5918
+14:13:53:731: "14:13:53:" ModelController: run year 273
+14:13:53:823: "14:13:53:" ModelController: run year 274
+14:13:53:902: "14:13:53:" ModelController: run year 275
+14:13:53:989: "14:13:53:" ModelController: run year 276
+14:13:54:071: "14:13:54:" ModelController: run year 277
+14:13:54:164: "14:13:54:" ModelController: run year 278
+14:13:54:255: "14:13:54:" ModelController: run year 279
+14:13:54:339: "14:13:54:" ModelController: run year 280
+14:13:54:351: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.98089
+14:13:54:428: "14:13:54:" ModelController: run year 281
+14:13:54:504: "14:13:54:" ModelController: run year 282
+14:13:54:604: "14:13:54:" ModelController: run year 283
+14:13:54:682: "14:13:54:" ModelController: run year 284
+14:13:54:763: "14:13:54:" ModelController: run year 285
+14:13:54:830: "14:13:54:" ModelController: run year 286
+14:13:54:915: "14:13:54:" ModelController: run year 287
+14:13:55:011: "14:13:55:" ModelController: run year 288
+14:13:55:106: "14:13:55:" ModelController: run year 289
+14:13:55:190: "14:13:55:" ModelController: run year 290
+14:13:55:287: "14:13:55:" ModelController: run year 291
+14:13:55:384: "14:13:55:" ModelController: run year 292
+14:13:55:470: "14:13:55:" ModelController: run year 293
+14:13:55:549: "14:13:55:" ModelController: run year 294
+14:13:55:624: "14:13:55:" ModelController: run year 295
+14:13:55:698: "14:13:55:" ModelController: run year 296
+14:13:55:770: "14:13:55:" ModelController: run year 297
+14:13:55:849: "14:13:55:" ModelController: run year 298
+14:13:55:860: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.54759
+14:13:55:970: Timer "growTrees()" : "107.026ms"
+14:13:55:985: Timer "Model::runYear()" : "135.653ms"
+14:13:55:985: Timer "ModelController:runYear" : "136.083ms"
+14:13:55:993: "14:13:55:" ModelController: run year 299
+14:13:56:003: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.54759
+14:13:56:092: "14:13:56:" ModelController: run year 300
+14:13:56:102: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.54759
+14:14:03:649: Timer "TreeOut::exec()" : "7498.84ms"
+14:14:05:605: Timer "outputs" : "9455.4ms"
+14:14:05:605: Timer "Model::runYear()" : "9513.23ms"
+14:14:05:605: Timer "ModelController:runYear" : "9513.64ms"
+14:14:05:614: "14:14:05:" ModelController: run year 301
+14:14:05:686: "14:14:05:" ModelController: run year 302
+14:14:05:764: "14:14:05:" ModelController: run year 303
+14:14:05:851: "14:14:05:" ModelController: run year 304
+14:14:05:941: "14:14:05:" ModelController: run year 305
+14:14:06:056: Timer "Model::runYear()" : "114.607ms"
+14:14:06:056: Timer "ModelController:runYear" : "114.972ms"
+14:14:06:064: "14:14:06:" ModelController: run year 306
+14:14:06:187: Timer "Model::runYear()" : "122.945ms"
+14:14:06:188: Timer "ModelController:runYear" : "124.566ms"
+14:14:06:196: "14:14:06:" ModelController: run year 307
+14:14:06:305: Timer "Model::runYear()" : "108.356ms"
+14:14:06:305: Timer "ModelController:runYear" : "108.724ms"
+14:14:06:313: "14:14:06:" ModelController: run year 308
+14:14:06:392: "14:14:06:" ModelController: run year 309
+14:14:06:393: restart of climate table
+14:14:06:393: restart of climate table
+14:14:06:393: restart of climate table
+14:14:06:393: restart of climate table
+14:14:06:393: restart of climate table
+14:14:06:393: restart of climate table
+14:14:06:393: restart of climate table
+14:14:06:393: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:394: restart of climate table
+14:14:06:467: "14:14:06:" ModelController: run year 310
+14:14:06:477: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.49658
+14:14:06:540: "14:14:06:" ModelController: run year 311
+14:14:06:610: "14:14:06:" ModelController: run year 312
+14:14:06:680: "14:14:06:" ModelController: run year 313
+14:14:06:749: "14:14:06:" ModelController: run year 314
+14:14:06:823: "14:14:06:" ModelController: run year 315
+14:14:06:898: "14:14:06:" ModelController: run year 316
+14:14:06:988: "14:14:06:" ModelController: run year 317
+14:14:07:076: "14:14:07:" ModelController: run year 318
+14:14:07:150: "14:14:07:" ModelController: run year 319
+14:14:07:238: "14:14:07:" ModelController: run year 320
+14:14:07:323: "14:14:07:" ModelController: run year 321
+14:14:07:334: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.5986
+14:14:07:413: "14:14:07:" ModelController: run year 322
+14:14:07:424: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  15.6013
+14:14:07:424: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.8152
+14:14:07:507: "14:14:07:" ModelController: run year 323
+14:14:07:586: "14:14:07:" ModelController: run year 324
+14:14:07:686: "14:14:07:" ModelController: run year 325
+14:14:07:761: "14:14:07:" ModelController: run year 326
+14:14:07:771: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.16371
+14:14:07:861: Timer "ModelController:runYear" : "100.087ms"
+14:14:07:868: "14:14:07:" ModelController: run year 327
+14:14:07:945: "14:14:07:" ModelController: run year 328
+14:14:07:956: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.27749
+14:14:08:025: "14:14:08:" ModelController: run year 329
+14:14:08:037: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.27749
+14:14:08:100: "14:14:08:" ModelController: run year 330
+14:14:08:183: "14:14:08:" ModelController: run year 331
+14:14:08:193: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.47711
+14:14:08:277: "14:14:08:" ModelController: run year 332
+14:14:08:289: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.0753
+14:14:08:382: "14:14:08:" ModelController: run year 333
+14:14:08:393: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.5772
+14:14:08:467: "14:14:08:" ModelController: run year 334
+14:14:08:478: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.5772
+14:14:08:559: "14:14:08:" ModelController: run year 335
+14:14:08:569: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.4451
+14:14:08:654: "14:14:08:" ModelController: run year 336
+14:14:08:746: "14:14:08:" ModelController: run year 337
+14:14:08:756: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  13.7396
+14:14:08:828: "14:14:08:" ModelController: run year 338
+14:14:08:838: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  13.8437
+14:14:08:902: "14:14:08:" ModelController: run year 339
+14:14:08:974: "14:14:08:" ModelController: run year 340
+14:14:09:044: "14:14:09:" ModelController: run year 341
+14:14:09:122: "14:14:09:" ModelController: run year 342
+14:14:09:245: Timer "growTrees()" : "109.316ms"
+14:14:09:259: Timer "Model::runYear()" : "137.245ms"
+14:14:09:259: Timer "ModelController:runYear" : "137.589ms"
+14:14:09:267: "14:14:09:" ModelController: run year 343
+14:14:09:373: "14:14:09:" ModelController: run year 344
+14:14:09:445: "14:14:09:" ModelController: run year 345
+14:14:09:523: "14:14:09:" ModelController: run year 346
+14:14:09:599: "14:14:09:" ModelController: run year 347
+14:14:09:681: "14:14:09:" ModelController: run year 348
+14:14:09:692: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.48047
+14:14:09:775: "14:14:09:" ModelController: run year 349
+14:14:09:786: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.48047
+14:14:09:887: Timer "Model::runYear()" : "112.045ms"
+14:14:09:888: Timer "ModelController:runYear" : "112.62ms"
+14:14:09:888: --- little break ---- (after  18092 ms).
+14:14:09:896: "14:14:09:" ModelController: run year 350
+14:14:09:906: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.48047
+14:14:09:907: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51317
+14:14:10:021: Timer "Model::runYear()" : "125.495ms"
+14:14:10:022: Timer "ModelController:runYear" : "125.91ms"
+14:14:10:030: "14:14:10:" ModelController: run year 351
+14:14:10:040: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.48047
+14:14:10:041: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51317
+14:14:10:143: Timer "Model::runYear()" : "112.782ms"
+14:14:10:143: Timer "ModelController:runYear" : "113.118ms"
+14:14:10:151: "14:14:10:" ModelController: run year 352
+14:14:10:161: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.48047
+14:14:10:228: "14:14:10:" ModelController: run year 353
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:228: restart of climate table
+14:14:10:229: restart of climate table
+14:14:10:229: restart of climate table
+14:14:10:229: restart of climate table
+14:14:10:229: restart of climate table
+14:14:10:229: restart of climate table
+14:14:10:229: restart of climate table
+14:14:10:229: restart of climate table
+14:14:10:238: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.37806
+14:14:10:303: "14:14:10:" ModelController: run year 354
+14:14:10:313: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.37806
+14:14:10:378: "14:14:10:" ModelController: run year 355
+14:14:10:388: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.17092
+14:14:10:389: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.71574
+14:14:10:389: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.31713
+14:14:10:447: "14:14:10:" ModelController: run year 356
+14:14:10:458: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.04088
+14:14:10:458: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.39167
+14:14:10:519: "14:14:10:" ModelController: run year 357
+14:14:10:530: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.00113
+14:14:10:588: "14:14:10:" ModelController: run year 358
+14:14:10:599: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.48516
+14:14:10:665: "14:14:10:" ModelController: run year 359
+14:14:10:676: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.7117
+14:14:10:676: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.1064
+14:14:10:739: "14:14:10:" ModelController: run year 360
+14:14:10:750: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.4097
+14:14:10:827: "14:14:10:" ModelController: run year 361
+14:14:10:916: "14:14:10:" ModelController: run year 362
+14:14:10:993: "14:14:10:" ModelController: run year 363
+14:14:11:083: "14:14:11:" ModelController: run year 364
+14:14:11:169: "14:14:11:" ModelController: run year 365
+14:14:11:180: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.1008
+14:14:11:257: "14:14:11:" ModelController: run year 366
+14:14:11:351: "14:14:11:" ModelController: run year 367
+14:14:11:433: "14:14:11:" ModelController: run year 368
+14:14:11:525: "14:14:11:" ModelController: run year 369
+14:14:11:603: "14:14:11:" ModelController: run year 370
+14:14:11:703: Timer "ModelController:runYear" : "100.307ms"
+14:14:11:711: "14:14:11:" ModelController: run year 371
+14:14:11:788: "14:14:11:" ModelController: run year 372
+14:14:11:866: "14:14:11:" ModelController: run year 373
+14:14:11:944: "14:14:11:" ModelController: run year 374
+14:14:11:955: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.12641
+14:14:12:028: "14:14:12:" ModelController: run year 375
+14:14:12:125: "14:14:12:" ModelController: run year 376
+14:14:12:230: "14:14:12:" ModelController: run year 377
+14:14:12:314: "14:14:12:" ModelController: run year 378
+14:14:12:394: "14:14:12:" ModelController: run year 379
+14:14:12:486: "14:14:12:" ModelController: run year 380
+14:14:12:578: "14:14:12:" ModelController: run year 381
+14:14:12:660: "14:14:12:" ModelController: run year 382
+14:14:12:735: "14:14:12:" ModelController: run year 383
+14:14:12:818: "14:14:12:" ModelController: run year 384
+14:14:12:885: "14:14:12:" ModelController: run year 385
+14:14:12:964: "14:14:12:" ModelController: run year 386
+14:14:12:975: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.68803
+14:14:13:081: Timer "growTrees()" : "103.29ms"
+14:14:13:095: Timer "Model::runYear()" : "131.258ms"
+14:14:13:095: Timer "ModelController:runYear" : "131.64ms"
+14:14:13:103: "14:14:13:" ModelController: run year 387
+14:14:13:114: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.68803
+14:14:13:206: "14:14:13:" ModelController: run year 388
+14:14:13:217: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.68803
+14:14:13:280: "14:14:13:" ModelController: run year 389
+14:14:13:291: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.46518
+14:14:13:353: "14:14:13:" ModelController: run year 390
+14:14:13:436: "14:14:13:" ModelController: run year 391
+14:14:13:517: "14:14:13:" ModelController: run year 392
+14:14:13:613: "14:14:13:" ModelController: run year 393
+14:14:13:624: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.40654
+14:14:13:728: Timer "Model::runYear()" : "115.37ms"
+14:14:13:729: Timer "ModelController:runYear" : "117.045ms"
+14:14:13:738: "14:14:13:" ModelController: run year 394
+14:14:13:862: Timer "Model::runYear()" : "124.717ms"
+14:14:13:862: Timer "ModelController:runYear" : "125.07ms"
+14:14:13:870: "14:14:13:" ModelController: run year 395
+14:14:13:988: Timer "Model::runYear()" : "117.644ms"
+14:14:13:989: Timer "ModelController:runYear" : "118.198ms"
+14:14:13:997: "14:14:13:" ModelController: run year 396
+14:14:14:073: "14:14:14:" ModelController: run year 397
+14:14:14:073: restart of climate table
+14:14:14:073: restart of climate table
+14:14:14:073: restart of climate table
+14:14:14:073: restart of climate table
+14:14:14:073: restart of climate table
+14:14:14:073: restart of climate table
+14:14:14:073: restart of climate table
+14:14:14:073: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:074: restart of climate table
+14:14:14:147: "14:14:14:" ModelController: run year 398
+14:14:14:157: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.37593
+14:14:14:158: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.2806
+14:14:14:220: "14:14:14:" ModelController: run year 399
+14:14:14:289: "14:14:14:" ModelController: run year 400
+14:14:15:598: Timer "TreeOut::exec()" : "1250.89ms"
+14:14:15:976: Timer "outputs" : "1629.74ms"
+14:14:15:976: Timer "Model::runYear()" : "1687.68ms"
+14:14:15:977: Timer "ModelController:runYear" : "1688.34ms"
+14:14:15:985: "14:14:15:" ModelController: run year 401
+14:14:16:052: "14:14:16:" ModelController: run year 402
+14:14:16:126: "14:14:16:" ModelController: run year 403
+14:14:16:196: "14:14:16:" ModelController: run year 404
+14:14:16:281: "14:14:16:" ModelController: run year 405
+14:14:16:364: "14:14:16:" ModelController: run year 406
+14:14:16:439: "14:14:16:" ModelController: run year 407
+14:14:16:520: "14:14:16:" ModelController: run year 408
+14:14:16:606: "14:14:16:" ModelController: run year 409
+14:14:16:697: "14:14:16:" ModelController: run year 410
+14:14:16:786: "14:14:16:" ModelController: run year 411
+14:14:16:796: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.63153
+14:14:16:864: "14:14:16:" ModelController: run year 412
+14:14:16:951: "14:14:16:" ModelController: run year 413
+14:14:17:027: "14:14:17:" ModelController: run year 414
+14:14:17:128: "14:14:17:" ModelController: run year 415
+14:14:17:201: "14:14:17:" ModelController: run year 416
+14:14:17:283: "14:14:17:" ModelController: run year 417
+14:14:17:351: "14:14:17:" ModelController: run year 418
+14:14:17:436: "14:14:17:" ModelController: run year 419
+14:14:17:532: "14:14:17:" ModelController: run year 420
+14:14:17:638: "14:14:17:" ModelController: run year 421
+14:14:17:736: "14:14:17:" ModelController: run year 422
+14:14:17:817: "14:14:17:" ModelController: run year 423
+14:14:17:911: "14:14:17:" ModelController: run year 424
+14:14:17:997: "14:14:17:" ModelController: run year 425
+14:14:18:077: "14:14:18:" ModelController: run year 426
+14:14:18:152: "14:14:18:" ModelController: run year 427
+14:14:18:222: "14:14:18:" ModelController: run year 428
+14:14:18:292: "14:14:18:" ModelController: run year 429
+14:14:18:304: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.58593
+14:14:18:367: "14:14:18:" ModelController: run year 430
+14:14:18:378: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.2604
+14:14:18:379: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.58593
+14:14:18:488: Timer "Model::runYear()" : "120.581ms"
+14:14:18:489: Timer "ModelController:runYear" : "121.226ms"
+14:14:18:496: "14:14:18:" ModelController: run year 431
+14:14:18:506: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.2604
+14:14:18:507: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.58593
+14:14:18:596: "14:14:18:" ModelController: run year 432
+14:14:18:606: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.5724
+14:14:18:607: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.58593
+14:14:18:671: "14:14:18:" ModelController: run year 433
+14:14:18:746: "14:14:18:" ModelController: run year 434
+14:14:18:815: "14:14:18:" ModelController: run year 435
+14:14:18:894: "14:14:18:" ModelController: run year 436
+14:14:18:906: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.15705
+14:14:18:981: "14:14:18:" ModelController: run year 437
+14:14:18:993: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.35775
+14:14:19:095: Timer "Model::runYear()" : "113.745ms"
+14:14:19:095: Timer "ModelController:runYear" : "114.166ms"
+14:14:19:103: "14:14:19:" ModelController: run year 438
+14:14:19:228: Timer "Model::runYear()" : "124.624ms"
+14:14:19:228: Timer "ModelController:runYear" : "124.953ms"
+14:14:19:236: "14:14:19:" ModelController: run year 439
+14:14:19:246: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.3184
+14:14:19:342: Timer "Model::runYear()" : "106.007ms"
+14:14:19:342: Timer "ModelController:runYear" : "106.444ms"
+14:14:19:350: "14:14:19:" ModelController: run year 440
+14:14:19:360: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.3184
+14:14:19:427: "14:14:19:" ModelController: run year 441
+14:14:19:427: restart of climate table
+14:14:19:427: restart of climate table
+14:14:19:427: restart of climate table
+14:14:19:427: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:428: restart of climate table
+14:14:19:429: restart of climate table
+14:14:19:429: restart of climate table
+14:14:19:429: restart of climate table
+14:14:19:496: "14:14:19:" ModelController: run year 442
+14:14:19:569: "14:14:19:" ModelController: run year 443
+14:14:19:638: "14:14:19:" ModelController: run year 444
+14:14:19:708: "14:14:19:" ModelController: run year 445
+14:14:19:778: "14:14:19:" ModelController: run year 446
+14:14:19:849: "14:14:19:" ModelController: run year 447
+14:14:19:919: "14:14:19:" ModelController: run year 448
+14:14:20:003: "14:14:20:" ModelController: run year 449
+14:14:20:079: --- little break ---- (after  10191 ms).
+14:14:20:087: "14:14:20:" ModelController: run year 450
+14:14:20:161: "14:14:20:" ModelController: run year 451
+14:14:20:242: "14:14:20:" ModelController: run year 452
+14:14:20:326: "14:14:20:" ModelController: run year 453
+14:14:20:414: "14:14:20:" ModelController: run year 454
+14:14:20:508: "14:14:20:" ModelController: run year 455
+14:14:20:584: "14:14:20:" ModelController: run year 456
+14:14:20:672: "14:14:20:" ModelController: run year 457
+14:14:20:749: "14:14:20:" ModelController: run year 458
+14:14:20:856: "14:14:20:" ModelController: run year 459
+14:14:20:930: "14:14:20:" ModelController: run year 460
+14:14:21:006: "14:14:21:" ModelController: run year 461
+14:14:21:077: "14:14:21:" ModelController: run year 462
+14:14:21:162: "14:14:21:" ModelController: run year 463
+14:14:21:174: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.40134
+14:14:21:259: "14:14:21:" ModelController: run year 464
+14:14:21:361: Timer "Model::runYear()" : "101.496ms"
+14:14:21:361: Timer "ModelController:runYear" : "101.882ms"
+14:14:21:370: "14:14:21:" ModelController: run year 465
+14:14:21:380: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.50813
+14:14:21:458: "14:14:21:" ModelController: run year 466
+14:14:21:468: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.50813
+14:14:21:542: "14:14:21:" ModelController: run year 467
+14:14:21:639: "14:14:21:" ModelController: run year 468
+14:14:21:733: "14:14:21:" ModelController: run year 469
+14:14:21:819: "14:14:21:" ModelController: run year 470
+14:14:21:831: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.6645
+14:14:21:897: "14:14:21:" ModelController: run year 471
+14:14:21:968: "14:14:21:" ModelController: run year 472
+14:14:22:041: "14:14:22:" ModelController: run year 473
+14:14:22:121: "14:14:22:" ModelController: run year 474
+14:14:22:248: Timer "growTrees()" : "112.679ms"
+14:14:22:262: Timer "Model::runYear()" : "140.646ms"
+14:14:22:262: Timer "ModelController:runYear" : "141.081ms"
+14:14:22:270: "14:14:22:" ModelController: run year 475
+14:14:22:373: Timer "Model::runYear()" : "103.727ms"
+14:14:22:374: Timer "ModelController:runYear" : "104.061ms"
+14:14:22:382: "14:14:22:" ModelController: run year 476
+14:14:22:457: "14:14:22:" ModelController: run year 477
+14:14:22:535: "14:14:22:" ModelController: run year 478
+14:14:22:608: "14:14:22:" ModelController: run year 479
+14:14:22:694: "14:14:22:" ModelController: run year 480
+14:14:22:787: "14:14:22:" ModelController: run year 481
+14:14:22:799: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.52302
+14:14:22:903: Timer "Model::runYear()" : "115.864ms"
+14:14:22:903: Timer "ModelController:runYear" : "116.362ms"
+14:14:22:911: "14:14:22:" ModelController: run year 482
+14:14:22:922: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.52302
+14:14:23:039: Timer "Model::runYear()" : "127.907ms"
+14:14:23:039: Timer "ModelController:runYear" : "128.289ms"
+14:14:23:047: "14:14:23:" ModelController: run year 483
+14:14:23:058: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.52302
+14:14:23:155: Timer "Model::runYear()" : "107.917ms"
+14:14:23:156: Timer "ModelController:runYear" : "108.362ms"
+14:14:23:163: "14:14:23:" ModelController: run year 484
+14:14:23:175: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.33012
+14:14:23:175: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.52302
+14:14:23:245: "14:14:23:" ModelController: run year 485
+14:14:23:245: restart of climate table
+14:14:23:245: restart of climate table
+14:14:23:245: restart of climate table
+14:14:23:245: restart of climate table
+14:14:23:245: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:246: restart of climate table
+14:14:23:247: restart of climate table
+14:14:23:247: restart of climate table
+14:14:23:256: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.33012
+14:14:23:317: "14:14:23:" ModelController: run year 486
+14:14:23:327: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.47247
+14:14:23:328: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.33012
+14:14:23:388: "14:14:23:" ModelController: run year 487
+14:14:23:470: "14:14:23:" ModelController: run year 488
+14:14:23:480: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.91718
+14:14:23:540: "14:14:23:" ModelController: run year 489
+14:14:23:610: "14:14:23:" ModelController: run year 490
+14:14:23:621: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.39739
+14:14:23:683: "14:14:23:" ModelController: run year 491
+14:14:23:695: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.056
+14:14:23:756: "14:14:23:" ModelController: run year 492
+14:14:23:843: "14:14:23:" ModelController: run year 493
+14:14:23:932: "14:14:23:" ModelController: run year 494
+14:14:24:007: "14:14:24:" ModelController: run year 495
+14:14:24:092: "14:14:24:" ModelController: run year 496
+14:14:24:178: "14:14:24:" ModelController: run year 497
+14:14:24:189: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.25997
+14:14:24:269: "14:14:24:" ModelController: run year 498
+14:14:24:280: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.25997
+14:14:24:365: "14:14:24:" ModelController: run year 499
+14:14:24:375: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.25997
+14:14:24:449: "14:14:24:" ModelController: run year 500
+14:14:25:881: Timer "TreeOut::exec()" : "1353.17ms"
+14:14:26:269: Timer "outputs" : "1741.3ms"
+14:14:26:269: Timer "Model::runYear()" : "1819.66ms"
+14:14:26:269: Timer "ModelController:runYear" : "1820.07ms"
+14:14:26:277: "14:14:26:" ModelController: run year 501
+14:14:26:355: "14:14:26:" ModelController: run year 502
+14:14:26:458: "14:14:26:" ModelController: run year 503
+14:14:26:535: "14:14:26:" ModelController: run year 504
+14:14:26:546: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.18873
+14:14:26:618: "14:14:26:" ModelController: run year 505
+14:14:26:629: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.18873
+14:14:26:688: "14:14:26:" ModelController: run year 506
+14:14:26:699: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.46842
+14:14:26:778: "14:14:26:" ModelController: run year 507
+14:14:26:877: "14:14:26:" ModelController: run year 508
+14:14:26:888: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.29478
+14:14:26:977: Timer "ModelController:runYear" : "100.044ms"
+14:14:26:985: "14:14:26:" ModelController: run year 509
+14:14:26:995: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.3779
+14:14:27:073: "14:14:27:" ModelController: run year 510
+14:14:27:083: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.3779
+14:14:27:157: "14:14:27:" ModelController: run year 511
+14:14:27:167: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.8702
+14:14:27:168: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.19907
+14:14:27:249: "14:14:27:" ModelController: run year 512
+14:14:27:338: "14:14:27:" ModelController: run year 513
+14:14:27:349: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.6231
+14:14:27:420: "14:14:27:" ModelController: run year 514
+14:14:27:430: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  13.5088
+14:14:27:495: "14:14:27:" ModelController: run year 515
+14:14:27:565: "14:14:27:" ModelController: run year 516
+14:14:27:640: "14:14:27:" ModelController: run year 517
+14:14:27:650: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.11237
+14:14:27:716: "14:14:27:" ModelController: run year 518
+14:14:27:727: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.11237
+14:14:27:837: Timer "growTrees()" : "106.298ms"
+14:14:27:851: Timer "Model::runYear()" : "134.918ms"
+14:14:27:852: Timer "ModelController:runYear" : "135.368ms"
+14:14:27:859: "14:14:27:" ModelController: run year 519
+14:14:27:870: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.11237
+14:14:27:968: Timer "Model::runYear()" : "107.956ms"
+14:14:27:968: Timer "ModelController:runYear" : "108.309ms"
+14:14:27:976: "14:14:27:" ModelController: run year 520
+14:14:28:049: "14:14:28:" ModelController: run year 521
+14:14:28:062: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.30987
+14:14:28:127: "14:14:28:" ModelController: run year 522
+14:14:28:201: "14:14:28:" ModelController: run year 523
+14:14:28:286: "14:14:28:" ModelController: run year 524
+14:14:28:393: "14:14:28:" ModelController: run year 525
+14:14:28:510: Timer "Model::runYear()" : "117.129ms"
+14:14:28:510: Timer "ModelController:runYear" : "117.471ms"
+14:14:28:518: "14:14:28:" ModelController: run year 526
+14:14:28:646: Timer "Model::runYear()" : "128.33ms"
+14:14:28:647: Timer "ModelController:runYear" : "128.766ms"
+14:14:28:655: "14:14:28:" ModelController: run year 527
+14:14:28:768: Timer "Model::runYear()" : "112.832ms"
+14:14:28:768: Timer "ModelController:runYear" : "113.2ms"
+14:14:28:776: "14:14:28:" ModelController: run year 528
+14:14:28:855: "14:14:28:" ModelController: run year 529
+14:14:28:855: restart of climate table
+14:14:28:855: restart of climate table
+14:14:28:855: restart of climate table
+14:14:28:855: restart of climate table
+14:14:28:855: restart of climate table
+14:14:28:855: restart of climate table
+14:14:28:855: restart of climate table
+14:14:28:855: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:856: restart of climate table
+14:14:28:941: "14:14:28:" ModelController: run year 530
+14:14:29:016: "14:14:29:" ModelController: run year 531
+14:14:29:086: "14:14:29:" ModelController: run year 532
+14:14:29:097: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  13.0978
+14:14:29:157: "14:14:29:" ModelController: run year 533
+14:14:29:228: "14:14:29:" ModelController: run year 534
+14:14:29:304: "14:14:29:" ModelController: run year 535
+14:14:29:377: "14:14:29:" ModelController: run year 536
+14:14:29:388: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.98627
+14:14:29:477: "14:14:29:" ModelController: run year 537
+14:14:29:565: "14:14:29:" ModelController: run year 538
+14:14:29:577: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.6585
+14:14:29:641: "14:14:29:" ModelController: run year 539
+14:14:29:724: "14:14:29:" ModelController: run year 540
+14:14:29:812: "14:14:29:" ModelController: run year 541
+14:14:29:823: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.97974
+14:14:29:908: "14:14:29:" ModelController: run year 542
+14:14:29:919: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.97974
+14:14:29:998: "14:14:29:" ModelController: run year 543
+14:14:30:079: "14:14:30:" ModelController: run year 544
+14:14:30:167: "14:14:30:" ModelController: run year 545
+14:14:30:178: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.61389
+14:14:30:246: "14:14:30:" ModelController: run year 546
+14:14:30:349: Timer "Model::runYear()" : "103.008ms"
+14:14:30:350: Timer "ModelController:runYear" : "103.343ms"
+14:14:30:357: "14:14:30:" ModelController: run year 547
+14:14:30:368: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.20051
+14:14:30:369: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.56368
+14:14:30:433: "14:14:30:" ModelController: run year 548
+14:14:30:443: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.95438
+14:14:30:517: "14:14:30:" ModelController: run year 549
+14:14:30:527: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.95438
+14:14:30:580: --- little break ---- (after  10501 ms).
+14:14:30:588: "14:14:30:" ModelController: run year 550
+14:14:30:672: "14:14:30:" ModelController: run year 551
+14:14:30:766: "14:14:30:" ModelController: run year 552
+14:14:30:777: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.08365
+14:14:30:867: Timer "Model::runYear()" : "100.656ms"
+14:14:30:867: Timer "ModelController:runYear" : "101.064ms"
+14:14:30:874: "14:14:30:" ModelController: run year 553
+14:14:30:886: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.57136
+14:14:30:960: "14:14:30:" ModelController: run year 554
+14:14:30:971: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.57136
+14:14:31:043: "14:14:31:" ModelController: run year 555
+14:14:31:053: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.7422
+14:14:31:135: "14:14:31:" ModelController: run year 556
+14:14:31:228: "14:14:31:" ModelController: run year 557
+14:14:31:311: "14:14:31:" ModelController: run year 558
+14:14:31:385: "14:14:31:" ModelController: run year 559
+14:14:31:396: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.3847
+14:14:31:457: "14:14:31:" ModelController: run year 560
+14:14:31:525: "14:14:31:" ModelController: run year 561
+14:14:31:604: "14:14:31:" ModelController: run year 562
+14:14:31:719: Timer "growTrees()" : "100.304ms"
+14:14:31:733: Timer "Model::runYear()" : "128.562ms"
+14:14:31:733: Timer "ModelController:runYear" : "128.928ms"
+14:14:31:741: "14:14:31:" ModelController: run year 563
+14:14:31:846: Timer "Model::runYear()" : "105.452ms"
+14:14:31:847: Timer "ModelController:runYear" : "105.86ms"
+14:14:31:855: "14:14:31:" ModelController: run year 564
+14:14:31:929: "14:14:31:" ModelController: run year 565
+14:14:32:004: "14:14:32:" ModelController: run year 566
+14:14:32:077: "14:14:32:" ModelController: run year 567
+14:14:32:160: "14:14:32:" ModelController: run year 568
+14:14:32:256: "14:14:32:" ModelController: run year 569
+14:14:32:267: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.36142
+14:14:32:371: Timer "Model::runYear()" : "115.224ms"
+14:14:32:371: Timer "ModelController:runYear" : "115.58ms"
+14:14:32:379: "14:14:32:" ModelController: run year 570
+14:14:32:389: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.36142
+14:14:32:509: Timer "Model::runYear()" : "129.255ms"
+14:14:32:509: Timer "ModelController:runYear" : "129.595ms"
+14:14:32:517: "14:14:32:" ModelController: run year 571
+14:14:32:527: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.36142
+14:14:32:630: Timer "Model::runYear()" : "112.581ms"
+14:14:32:630: Timer "ModelController:runYear" : "112.933ms"
+14:14:32:638: "14:14:32:" ModelController: run year 572
+14:14:32:648: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.36142
+14:14:32:720: "14:14:32:" ModelController: run year 573
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:720: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:721: restart of climate table
+14:14:32:730: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.36142
+14:14:32:794: "14:14:32:" ModelController: run year 574
+14:14:32:804: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.69145
+14:14:32:870: "14:14:32:" ModelController: run year 575
+14:14:32:880: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.79458
+14:14:32:941: "14:14:32:" ModelController: run year 576
+14:14:32:951: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.75557
+14:14:33:011: "14:14:33:" ModelController: run year 577
+14:14:33:080: "14:14:33:" ModelController: run year 578
+14:14:33:153: "14:14:33:" ModelController: run year 579
+14:14:33:163: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.1945
+14:14:33:226: "14:14:33:" ModelController: run year 580
+14:14:33:311: "14:14:33:" ModelController: run year 581
+14:14:33:399: "14:14:33:" ModelController: run year 582
+14:14:33:476: "14:14:33:" ModelController: run year 583
+14:14:33:561: "14:14:33:" ModelController: run year 584
+14:14:33:645: "14:14:33:" ModelController: run year 585
+14:14:33:741: "14:14:33:" ModelController: run year 586
+14:14:33:837: "14:14:33:" ModelController: run year 587
+14:14:33:924: "14:14:33:" ModelController: run year 588
+14:14:34:016: "14:14:34:" ModelController: run year 589
+14:14:34:095: "14:14:34:" ModelController: run year 590
+14:14:34:195: Timer "ModelController:runYear" : "100.269ms"
+14:14:34:203: "14:14:34:" ModelController: run year 591
+14:14:34:280: "14:14:34:" ModelController: run year 592
+14:14:34:292: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.34337
+14:14:34:363: "14:14:34:" ModelController: run year 593
+14:14:34:374: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.34337
+14:14:34:435: "14:14:34:" ModelController: run year 594
+14:14:34:521: "14:14:34:" ModelController: run year 595
+14:14:34:617: "14:14:34:" ModelController: run year 596
+14:14:34:718: Timer "Model::runYear()" : "101.252ms"
+14:14:34:719: Timer "ModelController:runYear" : "101.835ms"
+14:14:34:728: "14:14:34:" ModelController: run year 597
+14:14:34:818: "14:14:34:" ModelController: run year 598
+14:14:34:906: "14:14:34:" ModelController: run year 599
+14:14:35:002: "14:14:35:" ModelController: run year 600
+14:14:36:454: Timer "TreeOut::exec()" : "1366ms"
+14:14:36:872: Timer "outputs" : "1784.57ms"
+14:14:36:872: Timer "Model::runYear()" : "1869.91ms"
+14:14:36:873: Timer "ModelController:runYear" : "1870.76ms"
+14:14:36:881: "14:14:36:" ModelController: run year 601
+14:14:36:966: "14:14:36:" ModelController: run year 602
+14:14:37:046: "14:14:37:" ModelController: run year 603
+14:14:37:118: "14:14:37:" ModelController: run year 604
+14:14:37:183: "14:14:37:" ModelController: run year 605
+14:14:37:256: "14:14:37:" ModelController: run year 606
+14:14:37:380: Timer "Model::runYear()" : "123.637ms"
+14:14:37:380: Timer "ModelController:runYear" : "123.995ms"
+14:14:37:389: "14:14:37:" ModelController: run year 607
+14:14:37:495: "14:14:37:" ModelController: run year 608
+14:14:37:562: "14:14:37:" ModelController: run year 609
+14:14:37:574: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.52142
+14:14:37:636: "14:14:37:" ModelController: run year 610
+14:14:37:707: "14:14:37:" ModelController: run year 611
+14:14:37:792: "14:14:37:" ModelController: run year 612
+14:14:37:889: "14:14:37:" ModelController: run year 613
+14:14:38:006: Timer "Model::runYear()" : "116.243ms"
+14:14:38:008: Timer "ModelController:runYear" : "118.023ms"
+14:14:38:015: "14:14:38:" ModelController: run year 614
+14:14:38:027: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51864
+14:14:38:132: Timer "growTrees()" : "102.946ms"
+14:14:38:149: Timer "Model::runYear()" : "133.851ms"
+14:14:38:150: Timer "ModelController:runYear" : "134.824ms"
+14:14:38:158: "14:14:38:" ModelController: run year 615
+14:14:38:169: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51864
+14:14:38:270: Timer "Model::runYear()" : "111.563ms"
+14:14:38:270: Timer "ModelController:runYear" : "111.915ms"
+14:14:38:278: "14:14:38:" ModelController: run year 616
+14:14:38:290: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.64675
+14:14:38:290: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51864
+14:14:38:351: "14:14:38:" ModelController: run year 617
+14:14:38:351: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:352: restart of climate table
+14:14:38:353: restart of climate table
+14:14:38:353: restart of climate table
+14:14:38:353: restart of climate table
+14:14:38:353: restart of climate table
+14:14:38:353: restart of climate table
+14:14:38:353: restart of climate table
+14:14:38:363: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51864
+14:14:38:425: "14:14:38:" ModelController: run year 618
+14:14:38:436: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.51864
+14:14:38:497: "14:14:38:" ModelController: run year 619
+14:14:38:564: "14:14:38:" ModelController: run year 620
+14:14:38:576: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.91839
+14:14:38:633: "14:14:38:" ModelController: run year 621
+14:14:38:697: "14:14:38:" ModelController: run year 622
+14:14:38:767: "14:14:38:" ModelController: run year 623
+14:14:38:778: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.8205
+14:14:38:837: "14:14:38:" ModelController: run year 624
+14:14:38:930: "14:14:38:" ModelController: run year 625
+14:14:38:941: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.1999
+14:14:39:019: "14:14:39:" ModelController: run year 626
+14:14:39:091: "14:14:39:" ModelController: run year 627
+14:14:39:102: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.2226
+14:14:39:171: "14:14:39:" ModelController: run year 628
+14:14:39:183: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.7771
+14:14:39:251: "14:14:39:" ModelController: run year 629
+14:14:39:263: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.7771
+14:14:39:343: "14:14:39:" ModelController: run year 630
+14:14:39:355: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  15.6554
+14:14:39:438: "14:14:39:" ModelController: run year 631
+14:14:39:448: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.0623
+14:14:39:528: "14:14:39:" ModelController: run year 632
+14:14:39:619: "14:14:39:" ModelController: run year 633
+14:14:39:631: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.42483
+14:14:39:687: "14:14:39:" ModelController: run year 634
+14:14:39:789: Timer "Model::runYear()" : "102.088ms"
+14:14:39:790: Timer "ModelController:runYear" : "102.512ms"
+14:14:39:798: "14:14:39:" ModelController: run year 635
+14:14:39:872: "14:14:39:" ModelController: run year 636
+14:14:39:882: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.37348
+14:14:39:953: "14:14:39:" ModelController: run year 637
+14:14:40:021: "14:14:40:" ModelController: run year 638
+14:14:40:097: "14:14:40:" ModelController: run year 639
+14:14:40:182: "14:14:40:" ModelController: run year 640
+14:14:40:283: Timer "Model::runYear()" : "100.68ms"
+14:14:40:283: Timer "ModelController:runYear" : "101.175ms"
+14:14:40:291: "14:14:40:" ModelController: run year 641
+14:14:40:381: "14:14:40:" ModelController: run year 642
+14:14:40:467: "14:14:40:" ModelController: run year 643
+14:14:40:562: "14:14:40:" ModelController: run year 644
+14:14:40:642: "14:14:40:" ModelController: run year 645
+14:14:40:652: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.56521
+14:14:40:718: "14:14:40:" ModelController: run year 646
+14:14:40:730: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.56521
+14:14:40:793: "14:14:40:" ModelController: run year 647
+14:14:40:804: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.56521
+14:14:40:863: "14:14:40:" ModelController: run year 648
+14:14:40:874: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.56521
+14:14:40:931: "14:14:40:" ModelController: run year 649
+14:14:40:996: --- little break ---- (after  10416 ms).
+14:14:41:004: "14:14:41:" ModelController: run year 650
+14:14:41:122: Timer "growTrees()" : "103.592ms"
+14:14:41:136: Timer "Model::runYear()" : "132.168ms"
+14:14:41:137: Timer "ModelController:runYear" : "133.193ms"
+14:14:41:146: "14:14:41:" ModelController: run year 651
+14:14:41:240: "14:14:41:" ModelController: run year 652
+14:14:41:311: "14:14:41:" ModelController: run year 653
+14:14:41:392: "14:14:41:" ModelController: run year 654
+14:14:41:402: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.7284
+14:14:41:402: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.24205
+14:14:41:467: "14:14:41:" ModelController: run year 655
+14:14:41:552: "14:14:41:" ModelController: run year 656
+14:14:41:643: "14:14:41:" ModelController: run year 657
+14:14:41:760: Timer "Model::runYear()" : "116.596ms"
+14:14:41:760: Timer "ModelController:runYear" : "117.239ms"
+14:14:41:769: "14:14:41:" ModelController: run year 658
+14:14:41:779: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.48878
+14:14:41:879: Timer "Model::runYear()" : "110.461ms"
+14:14:41:880: Timer "ModelController:runYear" : "111.397ms"
+14:14:41:888: "14:14:41:" ModelController: run year 659
+14:14:41:898: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.49769
+14:14:42:006: Timer "Model::runYear()" : "117.784ms"
+14:14:42:006: Timer "ModelController:runYear" : "118.14ms"
+14:14:42:015: "14:14:42:" ModelController: run year 660
+14:14:42:025: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.49769
+14:14:42:096: "14:14:42:" ModelController: run year 661
+14:14:42:096: restart of climate table
+14:14:42:096: restart of climate table
+14:14:42:096: restart of climate table
+14:14:42:096: restart of climate table
+14:14:42:096: restart of climate table
+14:14:42:096: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:097: restart of climate table
+14:14:42:098: restart of climate table
+14:14:42:168: "14:14:42:" ModelController: run year 662
+14:14:42:179: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.8341
+14:14:42:179: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.03852
+14:14:42:244: "14:14:42:" ModelController: run year 663
+14:14:42:255: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.73887
+14:14:42:317: "14:14:42:" ModelController: run year 664
+14:14:42:390: "14:14:42:" ModelController: run year 665
+14:14:42:402: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.16033
+14:14:42:402: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.3178
+14:14:42:459: "14:14:42:" ModelController: run year 666
+14:14:42:470: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  13.8953
+14:14:42:471: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.16033
+14:14:42:533: "14:14:42:" ModelController: run year 667
+14:14:42:545: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.5551
+14:14:42:608: "14:14:42:" ModelController: run year 668
+14:14:42:620: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.8372
+14:14:42:620: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  16.051
+14:14:42:697: "14:14:42:" ModelController: run year 669
+14:14:42:709: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.46725
+14:14:42:709: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.82712
+14:14:42:790: "14:14:42:" ModelController: run year 670
+14:14:42:802: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.01495
+14:14:42:868: "14:14:42:" ModelController: run year 671
+14:14:42:952: "14:14:42:" ModelController: run year 672
+14:14:42:964: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.4088
+14:14:43:039: "14:14:43:" ModelController: run year 673
+14:14:43:050: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.4088
+14:14:43:125: "14:14:43:" ModelController: run year 674
+14:14:43:136: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.8665
+14:14:43:225: "14:14:43:" ModelController: run year 675
+14:14:43:236: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.3889
+14:14:43:298: "14:14:43:" ModelController: run year 676
+14:14:43:310: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  14.5996
+14:14:43:384: "14:14:43:" ModelController: run year 677
+14:14:43:463: "14:14:43:" ModelController: run year 678
+14:14:43:562: "14:14:43:" ModelController: run year 679
+14:14:43:632: "14:14:43:" ModelController: run year 680
+14:14:43:703: "14:14:43:" ModelController: run year 681
+14:14:43:772: "14:14:43:" ModelController: run year 682
+14:14:43:848: "14:14:43:" ModelController: run year 683
+14:14:43:944: "14:14:43:" ModelController: run year 684
+14:14:44:038: "14:14:44:" ModelController: run year 685
+14:14:44:123: "14:14:44:" ModelController: run year 686
+14:14:44:209: "14:14:44:" ModelController: run year 687
+14:14:44:305: "14:14:44:" ModelController: run year 688
+14:14:44:398: "14:14:44:" ModelController: run year 689
+14:14:44:483: "14:14:44:" ModelController: run year 690
+14:14:44:555: "14:14:44:" ModelController: run year 691
+14:14:44:622: "14:14:44:" ModelController: run year 692
+14:14:44:692: "14:14:44:" ModelController: run year 693
+14:14:44:774: "14:14:44:" ModelController: run year 694
+14:14:44:887: Timer "Model::runYear()" : "113.626ms"
+14:14:44:888: Timer "ModelController:runYear" : "114.351ms"
+14:14:44:896: "14:14:44:" ModelController: run year 695
+14:14:44:993: "14:14:44:" ModelController: run year 696
+14:14:45:062: "14:14:45:" ModelController: run year 697
+14:14:45:136: "14:14:45:" ModelController: run year 698
+14:14:45:203: "14:14:45:" ModelController: run year 699
+14:14:45:279: "14:14:45:" ModelController: run year 700
+14:14:46:702: Timer "TreeOut::exec()" : "1344.53ms"
+14:14:47:095: Timer "outputs" : "1736.93ms"
+14:14:47:095: Timer "Model::runYear()" : "1815.66ms"
+14:14:47:096: Timer "ModelController:runYear" : "1816.47ms"
+14:14:47:103: "14:14:47:" ModelController: run year 701
+14:14:47:216: Timer "Model::runYear()" : "112.925ms"
+14:14:47:217: Timer "ModelController:runYear" : "113.389ms"
+14:14:47:225: "14:14:47:" ModelController: run year 702
+14:14:47:351: Timer "Model::runYear()" : "126.558ms"
+14:14:47:352: Timer "ModelController:runYear" : "127.567ms"
+14:14:47:361: "14:14:47:" ModelController: run year 703
+14:14:47:469: Timer "Model::runYear()" : "108.144ms"
+14:14:47:469: Timer "ModelController:runYear" : "108.602ms"
+14:14:47:478: "14:14:47:" ModelController: run year 704
+14:14:47:557: "14:14:47:" ModelController: run year 705
+14:14:47:557: restart of climate table
+14:14:47:557: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:558: restart of climate table
+14:14:47:559: restart of climate table
+14:14:47:559: restart of climate table
+14:14:47:559: restart of climate table
+14:14:47:559: restart of climate table
+14:14:47:559: restart of climate table
+14:14:47:632: "14:14:47:" ModelController: run year 706
+14:14:47:706: "14:14:47:" ModelController: run year 707
+14:14:47:774: "14:14:47:" ModelController: run year 708
+14:14:47:847: "14:14:47:" ModelController: run year 709
+14:14:47:918: "14:14:47:" ModelController: run year 710
+14:14:47:991: "14:14:47:" ModelController: run year 711
+14:14:48:068: "14:14:48:" ModelController: run year 712
+14:14:48:160: "14:14:48:" ModelController: run year 713
+14:14:48:247: "14:14:48:" ModelController: run year 714
+14:14:48:324: "14:14:48:" ModelController: run year 715
+14:14:48:406: "14:14:48:" ModelController: run year 716
+14:14:48:492: "14:14:48:" ModelController: run year 717
+14:14:48:580: "14:14:48:" ModelController: run year 718
+14:14:48:675: "14:14:48:" ModelController: run year 719
+14:14:48:755: "14:14:48:" ModelController: run year 720
+14:14:48:842: "14:14:48:" ModelController: run year 721
+14:14:48:853: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.82841
+14:14:48:920: "14:14:48:" ModelController: run year 722
+14:14:49:020: "14:14:49:" ModelController: run year 723
+14:14:49:099: "14:14:49:" ModelController: run year 724
+14:14:49:110: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.58356
+14:14:49:179: "14:14:49:" ModelController: run year 725
+14:14:49:190: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.58356
+14:14:49:250: "14:14:49:" ModelController: run year 726
+14:14:49:337: "14:14:49:" ModelController: run year 727
+14:14:49:430: "14:14:49:" ModelController: run year 728
+14:14:49:535: "14:14:49:" ModelController: run year 729
+14:14:49:545: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.09613
+14:14:49:623: "14:14:49:" ModelController: run year 730
+14:14:49:634: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.09613
+14:14:49:707: "14:14:49:" ModelController: run year 731
+14:14:49:799: "14:14:49:" ModelController: run year 732
+14:14:49:809: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.91991
+14:14:49:886: "14:14:49:" ModelController: run year 733
+14:14:49:896: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.91037
+14:14:49:897: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.35907
+14:14:49:969: "14:14:49:" ModelController: run year 734
+14:14:49:979: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.73039
+14:14:49:979: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.91037
+14:14:49:980: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.35907
+14:14:50:049: "14:14:50:" ModelController: run year 735
+14:14:50:059: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.9655
+14:14:50:121: "14:14:50:" ModelController: run year 736
+14:14:50:195: "14:14:50:" ModelController: run year 737
+14:14:50:273: "14:14:50:" ModelController: run year 738
+14:14:50:400: Timer "Model::runYear()" : "126.642ms"
+14:14:50:401: Timer "ModelController:runYear" : "126.974ms"
+14:14:50:409: "14:14:50:" ModelController: run year 739
+14:14:50:513: Timer "Model::runYear()" : "104.501ms"
+14:14:50:513: Timer "ModelController:runYear" : "104.876ms"
+14:14:50:522: "14:14:50:" ModelController: run year 740
+14:14:50:597: "14:14:50:" ModelController: run year 741
+14:14:50:673: "14:14:50:" ModelController: run year 742
+14:14:50:747: "14:14:50:" ModelController: run year 743
+14:14:50:829: "14:14:50:" ModelController: run year 744
+14:14:50:919: "14:14:50:" ModelController: run year 745
+14:14:51:032: Timer "Model::runYear()" : "112.796ms"
+14:14:51:032: Timer "ModelController:runYear" : "113.134ms"
+14:14:51:040: "14:14:51:" ModelController: run year 746
+14:14:51:162: Timer "growTrees()" : "108.671ms"
+14:14:51:179: Timer "Model::runYear()" : "138.802ms"
+14:14:51:179: Timer "ModelController:runYear" : "139.167ms"
+14:14:51:187: "14:14:51:" ModelController: run year 747
+14:14:51:300: Timer "Model::runYear()" : "112.806ms"
+14:14:51:300: Timer "ModelController:runYear" : "113.134ms"
+14:14:51:308: "14:14:51:" ModelController: run year 748
+14:14:51:387: "14:14:51:" ModelController: run year 749
+14:14:51:387: restart of climate table
+14:14:51:387: restart of climate table
+14:14:51:387: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:388: restart of climate table
+14:14:51:389: restart of climate table
+14:14:51:389: restart of climate table
+14:14:51:389: restart of climate table
+14:14:51:389: restart of climate table
+14:14:51:453: --- little break ---- (after  10457 ms).
+14:14:51:460: "14:14:51:" ModelController: run year 750
+14:14:51:534: "14:14:51:" ModelController: run year 751
+14:14:51:543: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.54067
+14:14:51:605: "14:14:51:" ModelController: run year 752
+14:14:51:676: "14:14:51:" ModelController: run year 753
+14:14:51:686: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.34364
+14:14:51:747: "14:14:51:" ModelController: run year 754
+14:14:51:757: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.34364
+14:14:51:821: "14:14:51:" ModelController: run year 755
+14:14:51:831: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.34364
+14:14:51:896: "14:14:51:" ModelController: run year 756
+14:14:51:980: "14:14:51:" ModelController: run year 757
+14:14:52:066: "14:14:52:" ModelController: run year 758
+14:14:52:144: "14:14:52:" ModelController: run year 759
+14:14:52:228: "14:14:52:" ModelController: run year 760
+14:14:52:322: "14:14:52:" ModelController: run year 761
+14:14:52:425: "14:14:52:" ModelController: run year 762
+14:14:52:522: "14:14:52:" ModelController: run year 763
+14:14:52:602: "14:14:52:" ModelController: run year 764
+14:14:52:692: "14:14:52:" ModelController: run year 765
+14:14:52:769: "14:14:52:" ModelController: run year 766
+14:14:52:870: Timer "ModelController:runYear" : "100.225ms"
+14:14:52:878: "14:14:52:" ModelController: run year 767
+14:14:52:958: "14:14:52:" ModelController: run year 768
+14:14:53:036: "14:14:53:" ModelController: run year 769
+14:14:53:107: "14:14:53:" ModelController: run year 770
+14:14:53:197: "14:14:53:" ModelController: run year 771
+14:14:53:292: "14:14:53:" ModelController: run year 772
+14:14:53:396: "14:14:53:" ModelController: run year 773
+14:14:53:492: "14:14:53:" ModelController: run year 774
+14:14:53:575: "14:14:53:" ModelController: run year 775
+14:14:53:667: "14:14:53:" ModelController: run year 776
+14:14:53:757: "14:14:53:" ModelController: run year 777
+14:14:53:839: "14:14:53:" ModelController: run year 778
+14:14:53:914: "14:14:53:" ModelController: run year 779
+14:14:53:986: "14:14:53:" ModelController: run year 780
+14:14:54:055: "14:14:54:" ModelController: run year 781
+14:14:54:136: "14:14:54:" ModelController: run year 782
+14:14:54:255: Timer "growTrees()" : "104.977ms"
+14:14:54:272: Timer "Model::runYear()" : "136.215ms"
+14:14:54:273: Timer "ModelController:runYear" : "136.552ms"
+14:14:54:281: "14:14:54:" ModelController: run year 783
+14:14:54:388: "14:14:54:" ModelController: run year 784
+14:14:54:463: "14:14:54:" ModelController: run year 785
+14:14:54:538: "14:14:54:" ModelController: run year 786
+14:14:54:613: "14:14:54:" ModelController: run year 787
+14:14:54:698: "14:14:54:" ModelController: run year 788
+14:14:54:790: "14:14:54:" ModelController: run year 789
+14:14:54:909: Timer "Model::runYear()" : "119.064ms"
+14:14:54:910: Timer "ModelController:runYear" : "119.969ms"
+14:14:54:918: "14:14:54:" ModelController: run year 790
+14:14:55:044: Timer "Model::runYear()" : "125.207ms"
+14:14:55:044: Timer "ModelController:runYear" : "125.665ms"
+14:14:55:052: "14:14:55:" ModelController: run year 791
+14:14:55:166: Timer "Model::runYear()" : "114.2ms"
+14:14:55:166: Timer "ModelController:runYear" : "114.757ms"
+14:14:55:175: "14:14:55:" ModelController: run year 792
+14:14:55:257: "14:14:55:" ModelController: run year 793
+14:14:55:257: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:258: restart of climate table
+14:14:55:259: restart of climate table
+14:14:55:259: restart of climate table
+14:14:55:259: restart of climate table
+14:14:55:259: restart of climate table
+14:14:55:259: restart of climate table
+14:14:55:259: restart of climate table
+14:14:55:259: restart of climate table
+14:14:55:333: "14:14:55:" ModelController: run year 794
+14:14:55:415: "14:14:55:" ModelController: run year 795
+14:14:55:488: "14:14:55:" ModelController: run year 796
+14:14:55:563: "14:14:55:" ModelController: run year 797
+14:14:55:634: "14:14:55:" ModelController: run year 798
+14:14:55:716: "14:14:55:" ModelController: run year 799
+14:14:55:798: "14:14:55:" ModelController: run year 800
+14:14:57:293: Timer "TreeOut::exec()" : "1420.38ms"
+14:14:57:741: Timer "outputs" : "1868.84ms"
+14:14:57:741: Timer "Model::runYear()" : "1943.63ms"
+14:14:57:746: Timer "ModelController:runYear" : "1947.94ms"
+14:14:57:756: "14:14:57:" ModelController: run year 801
+14:14:57:866: Timer "ModelController:runYear" : "110.562ms"
+14:14:57:877: "14:14:57:" ModelController: run year 802
+14:14:57:955: "14:14:57:" ModelController: run year 803
+14:14:58:048: "14:14:58:" ModelController: run year 804
+14:14:58:061: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.88488
+14:14:58:140: "14:14:58:" ModelController: run year 805
+14:14:58:153: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.88488
+14:14:58:237: "14:14:58:" ModelController: run year 806
+14:14:58:250: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.96974
+14:14:58:341: Timer "Model::runYear()" : "102.907ms"
+14:14:58:341: Timer "ModelController:runYear" : "103.592ms"
+14:14:58:350: "14:14:58:" ModelController: run year 807
+14:14:58:433: "14:14:58:" ModelController: run year 808
+14:14:58:527: "14:14:58:" ModelController: run year 809
+14:14:58:603: "14:14:58:" ModelController: run year 810
+14:14:58:706: Timer "Model::runYear()" : "102.193ms"
+14:14:58:706: Timer "ModelController:runYear" : "102.563ms"
+14:14:58:714: "14:14:58:" ModelController: run year 811
+14:14:59:061: Timer "sapling growth" : "284.317ms"
+14:14:59:061: Timer "Seed dispersal, establishment, sapling growth" : "290.585ms"
+14:14:59:067: Timer "Model::runYear()" : "352.826ms"
+14:14:59:067: Timer "ModelController:runYear" : "353.192ms"
+14:14:59:077: "14:14:59:" ModelController: run year 812
+14:14:59:163: "14:14:59:" ModelController: run year 813
+14:14:59:247: "14:14:59:" ModelController: run year 814
+14:14:59:334: "14:14:59:" ModelController: run year 815
+14:14:59:438: "14:14:59:" ModelController: run year 816
+14:14:59:552: Timer "Model::runYear()" : "113.768ms"
+14:14:59:552: Timer "ModelController:runYear" : "114.185ms"
+14:14:59:560: "14:14:59:" ModelController: run year 817
+14:14:59:651: "14:14:59:" ModelController: run year 818
+14:14:59:739: "14:14:59:" ModelController: run year 819
+14:14:59:845: Timer "Model::runYear()" : "105.37ms"
+14:14:59:845: Timer "ModelController:runYear" : "105.798ms"
+14:14:59:856: "14:14:59:" ModelController: run year 820
+14:14:59:965: Timer "Model::runYear()" : "109.338ms"
+14:14:59:966: Timer "ModelController:runYear" : "109.978ms"
+14:14:59:976: "14:14:59:" ModelController: run year 821
+14:15:00:090: "14:15:00:" ModelController: run year 822
+14:15:00:186: "14:15:00:" ModelController: run year 823
+14:15:00:265: "14:15:00:" ModelController: run year 824
+14:15:00:339: "14:15:00:" ModelController: run year 825
+14:15:00:422: "14:15:00:" ModelController: run year 826
+14:15:00:556: Timer "growTrees()" : "118.891ms"
+14:15:00:570: Timer "Model::runYear()" : "148.126ms"
+14:15:00:572: Timer "ModelController:runYear" : "149.934ms"
+14:15:00:581: "14:15:00:" ModelController: run year 827
+14:15:00:686: Timer "Model::runYear()" : "104.774ms"
+14:15:00:686: Timer "ModelController:runYear" : "105.242ms"
+14:15:00:694: "14:15:00:" ModelController: run year 828
+14:15:00:777: "14:15:00:" ModelController: run year 829
+14:15:00:863: "14:15:00:" ModelController: run year 830
+14:15:00:940: "14:15:00:" ModelController: run year 831
+14:15:01:031: "14:15:01:" ModelController: run year 832
+14:15:01:139: "14:15:01:" ModelController: run year 833
+14:15:01:261: Timer "Model::runYear()" : "121.984ms"
+14:15:01:261: Timer "ModelController:runYear" : "122.48ms"
+14:15:01:269: "14:15:01:" ModelController: run year 834
+14:15:01:391: Timer "growTrees()" : "107.406ms"
+14:15:01:407: Timer "Model::runYear()" : "137.475ms"
+14:15:01:407: Timer "ModelController:runYear" : "137.964ms"
+14:15:01:416: "14:15:01:" ModelController: run year 835
+14:15:01:528: Timer "Model::runYear()" : "112.859ms"
+14:15:01:529: Timer "ModelController:runYear" : "113.257ms"
+14:15:01:537: "14:15:01:" ModelController: run year 836
+14:15:01:616: "14:15:01:" ModelController: run year 837
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:616: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:617: restart of climate table
+14:15:01:692: "14:15:01:" ModelController: run year 838
+14:15:01:767: "14:15:01:" ModelController: run year 839
+14:15:01:838: "14:15:01:" ModelController: run year 840
+14:15:01:923: "14:15:01:" ModelController: run year 841
+14:15:01:995: "14:15:01:" ModelController: run year 842
+14:15:02:069: "14:15:02:" ModelController: run year 843
+14:15:02:145: "14:15:02:" ModelController: run year 844
+14:15:02:157: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.07546
+14:15:02:244: "14:15:02:" ModelController: run year 845
+14:15:02:337: "14:15:02:" ModelController: run year 846
+14:15:02:348: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  10.2619
+14:15:02:415: "14:15:02:" ModelController: run year 847
+14:15:02:504: "14:15:02:" ModelController: run year 848
+14:15:02:590: "14:15:02:" ModelController: run year 849
+14:15:02:673: --- little break ---- (after  11220 ms).
+14:15:02:682: "14:15:02:" ModelController: run year 850
+14:15:02:790: Timer "Model::runYear()" : "108.56ms"
+14:15:02:791: Timer "ModelController:runYear" : "109.248ms"
+14:15:02:805: "14:15:02:" ModelController: run year 851
+14:15:02:890: "14:15:02:" ModelController: run year 852
+14:15:02:982: "14:15:02:" ModelController: run year 853
+14:15:03:065: "14:15:03:" ModelController: run year 854
+14:15:03:170: Timer "Model::runYear()" : "104.257ms"
+14:15:03:170: Timer "ModelController:runYear" : "104.638ms"
+14:15:03:178: "14:15:03:" ModelController: run year 855
+14:15:03:262: "14:15:03:" ModelController: run year 856
+14:15:03:349: "14:15:03:" ModelController: run year 857
+14:15:03:429: "14:15:03:" ModelController: run year 858
+14:15:03:519: "14:15:03:" ModelController: run year 859
+14:15:03:625: "14:15:03:" ModelController: run year 860
+14:15:03:736: Timer "Model::runYear()" : "110.128ms"
+14:15:03:736: Timer "ModelController:runYear" : "110.516ms"
+14:15:03:744: "14:15:03:" ModelController: run year 861
+14:15:03:840: "14:15:03:" ModelController: run year 862
+14:15:03:931: "14:15:03:" ModelController: run year 863
+14:15:04:031: "14:15:04:" ModelController: run year 864
+14:15:04:137: "14:15:04:" ModelController: run year 865
+14:15:04:230: "14:15:04:" ModelController: run year 866
+14:15:04:366: Timer "growTrees()" : "120.566ms"
+14:15:04:383: Timer "Model::runYear()" : "153.163ms"
+14:15:04:384: Timer "ModelController:runYear" : "153.728ms"
+14:15:04:395: "14:15:04:" ModelController: run year 867
+14:15:04:482: "14:15:04:" ModelController: run year 868
+14:15:04:564: "14:15:04:" ModelController: run year 869
+14:15:04:576: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.2019
+14:15:04:652: "14:15:04:" ModelController: run year 870
+14:15:04:664: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.2019
+14:15:04:793: Timer "growTrees()" : "125.791ms"
+14:15:04:809: Timer "Model::runYear()" : "157.359ms"
+14:15:04:810: Timer "ModelController:runYear" : "157.82ms"
+14:15:04:821: "14:15:04:" ModelController: run year 871
+14:15:04:835: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.2019
+14:15:04:927: "14:15:04:" ModelController: run year 872
+14:15:04:938: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  8.2019
+14:15:05:009: "14:15:05:" ModelController: run year 873
+14:15:05:021: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.60901
+14:15:05:095: "14:15:05:" ModelController: run year 874
+14:15:05:108: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  7.90499
+14:15:05:180: "14:15:05:" ModelController: run year 875
+14:15:05:274: "14:15:05:" ModelController: run year 876
+14:15:05:376: "14:15:05:" ModelController: run year 877
+14:15:05:492: Timer "growTrees()" : "100.325ms"
+14:15:05:511: Timer "Model::runYear()" : "134.883ms"
+14:15:05:511: Timer "ModelController:runYear" : "135.406ms"
+14:15:05:521: "14:15:05:" ModelController: run year 878
+14:15:05:643: Timer "growTrees()" : "107.12ms"
+14:15:05:661: Timer "Model::runYear()" : "139.573ms"
+14:15:05:661: Timer "ModelController:runYear" : "140.016ms"
+14:15:05:672: "14:15:05:" ModelController: run year 879
+14:15:05:806: Timer "growTrees()" : "115.374ms"
+14:15:05:825: Timer "Model::runYear()" : "152.185ms"
+14:15:05:828: Timer "ModelController:runYear" : "155.044ms"
+14:15:05:840: "14:15:05:" ModelController: run year 880
+14:15:05:930: "14:15:05:" ModelController: run year 881
+14:15:05:930: restart of climate table
+14:15:05:930: restart of climate table
+14:15:05:930: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:931: restart of climate table
+14:15:05:932: restart of climate table
+14:15:05:932: restart of climate table
+14:15:05:932: restart of climate table
+14:15:05:932: restart of climate table
+14:15:05:932: restart of climate table
+14:15:05:932: restart of climate table
+14:15:05:932: restart of climate table
+14:15:05:932: restart of climate table
+14:15:06:011: "14:15:06:" ModelController: run year 882
+14:15:06:098: "14:15:06:" ModelController: run year 883
+14:15:06:169: "14:15:06:" ModelController: run year 884
+14:15:06:242: "14:15:06:" ModelController: run year 885
+14:15:06:324: "14:15:06:" ModelController: run year 886
+14:15:06:411: "14:15:06:" ModelController: run year 887
+14:15:06:494: "14:15:06:" ModelController: run year 888
+14:15:06:589: "14:15:06:" ModelController: run year 889
+14:15:06:601: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.81515
+14:15:06:686: "14:15:06:" ModelController: run year 890
+14:15:06:774: "14:15:06:" ModelController: run year 891
+14:15:06:883: "14:15:06:" ModelController: run year 892
+14:15:06:987: "14:15:06:" ModelController: run year 893
+14:15:07:099: Timer "Model::runYear()" : "112.505ms"
+14:15:07:101: Timer "ModelController:runYear" : "114.666ms"
+14:15:07:112: "14:15:07:" ModelController: run year 894
+14:15:07:220: "14:15:07:" ModelController: run year 895
+14:15:07:317: "14:15:07:" ModelController: run year 896
+14:15:07:427: "14:15:07:" ModelController: run year 897
+14:15:07:515: "14:15:07:" ModelController: run year 898
+14:15:07:629: Timer "Model::runYear()" : "113.715ms"
+14:15:07:629: Timer "ModelController:runYear" : "114.142ms"
+14:15:07:638: "14:15:07:" ModelController: run year 899
+14:15:07:717: "14:15:07:" ModelController: run year 900
+14:15:09:405: Timer "TreeOut::exec()" : "1616.77ms"
+14:15:09:874: Timer "outputs" : "2085.88ms"
+14:15:09:874: Timer "Model::runYear()" : "2156.6ms"
+14:15:09:874: Timer "ModelController:runYear" : "2157.04ms"
+14:15:09:884: "14:15:09:" ModelController: run year 901
+14:15:09:963: "14:15:09:" ModelController: run year 902
+14:15:10:057: "14:15:10:" ModelController: run year 903
+14:15:10:158: Timer "Model::runYear()" : "100.765ms"
+14:15:10:160: Timer "ModelController:runYear" : "102.512ms"
+14:15:10:169: "14:15:10:" ModelController: run year 904
+14:15:10:279: Timer "Model::runYear()" : "110.449ms"
+14:15:10:281: Timer "ModelController:runYear" : "112.446ms"
+14:15:10:290: "14:15:10:" ModelController: run year 905
+14:15:10:397: "14:15:10:" ModelController: run year 906
+14:15:10:493: "14:15:10:" ModelController: run year 907
+14:15:10:596: "14:15:10:" ModelController: run year 908
+14:15:10:698: "14:15:10:" ModelController: run year 909
+14:15:10:791: "14:15:10:" ModelController: run year 910
+14:15:10:874: "14:15:10:" ModelController: run year 911
+14:15:10:951: "14:15:10:" ModelController: run year 912
+14:15:11:038: "14:15:11:" ModelController: run year 913
+14:15:11:142: "14:15:11:" ModelController: run year 914
+14:15:11:286: Timer "growTrees()" : "125.173ms"
+14:15:11:302: Timer "Model::runYear()" : "159.776ms"
+14:15:11:302: Timer "ModelController:runYear" : "160.231ms"
+14:15:11:310: "14:15:11:" ModelController: run year 915
+14:15:11:420: Timer "Model::runYear()" : "110.044ms"
+14:15:11:421: Timer "ModelController:runYear" : "110.657ms"
+14:15:11:429: "14:15:11:" ModelController: run year 916
+14:15:11:507: "14:15:11:" ModelController: run year 917
+14:15:11:595: "14:15:11:" ModelController: run year 918
+14:15:11:675: "14:15:11:" ModelController: run year 919
+14:15:11:780: "14:15:11:" ModelController: run year 920
+14:15:11:886: Timer "Model::runYear()" : "106.577ms"
+14:15:11:887: Timer "ModelController:runYear" : "107.12ms"
+14:15:11:898: "14:15:11:" ModelController: run year 921
+14:15:12:025: Timer "growTrees()" : "109.58ms"
+14:15:12:041: Timer "Model::runYear()" : "142.205ms"
+14:15:12:041: Timer "ModelController:runYear" : "142.692ms"
+14:15:12:051: "14:15:12:" ModelController: run year 922
+14:15:12:063: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.60843
+14:15:12:178: Timer "growTrees()" : "112.291ms"
+14:15:12:195: Timer "Model::runYear()" : "144.244ms"
+14:15:12:195: Timer "ModelController:runYear" : "144.623ms"
+14:15:12:203: "14:15:12:" ModelController: run year 923
+14:15:12:215: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.60843
+14:15:12:324: Timer "Model::runYear()" : "120.692ms"
+14:15:12:325: Timer "ModelController:runYear" : "121.093ms"
+14:15:12:333: "14:15:12:" ModelController: run year 924
+14:15:12:345: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.60843
+14:15:12:418: "14:15:12:" ModelController: run year 925
+14:15:12:418: restart of climate table
+14:15:12:418: restart of climate table
+14:15:12:418: restart of climate table
+14:15:12:419: restart of climate table
+14:15:12:419: restart of climate table
+14:15:12:419: restart of climate table
+14:15:12:419: restart of climate table
+14:15:12:419: restart of climate table
+14:15:12:419: restart of climate table
+14:15:12:419: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:420: restart of climate table
+14:15:12:421: restart of climate table
+14:15:12:431: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.60843
+14:15:12:500: "14:15:12:" ModelController: run year 926
+14:15:12:580: "14:15:12:" ModelController: run year 927
+14:15:12:650: "14:15:12:" ModelController: run year 928
+14:15:12:726: "14:15:12:" ModelController: run year 929
+14:15:12:798: "14:15:12:" ModelController: run year 930
+14:15:12:878: "14:15:12:" ModelController: run year 931
+14:15:12:958: "14:15:12:" ModelController: run year 932
+14:15:13:051: "14:15:13:" ModelController: run year 933
+14:15:13:064: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  12.2489
+14:15:13:147: "14:15:13:" ModelController: run year 934
+14:15:13:158: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.32989
+14:15:13:228: "14:15:13:" ModelController: run year 935
+14:15:13:239: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  6.97125
+14:15:13:318: "14:15:13:" ModelController: run year 936
+14:15:13:409: "14:15:13:" ModelController: run year 937
+14:15:13:503: "14:15:13:" ModelController: run year 938
+14:15:13:602: "14:15:13:" ModelController: run year 939
+14:15:13:612: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  9.64459
+14:15:13:686: "14:15:13:" ModelController: run year 940
+14:15:13:698: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  11.2721
+14:15:13:780: "14:15:13:" ModelController: run year 941
+14:15:13:860: "14:15:13:" ModelController: run year 942
+14:15:13:968: Timer "Model::runYear()" : "107.205ms"
+14:15:13:968: Timer "ModelController:runYear" : "107.802ms"
+14:15:13:978: "14:15:13:" ModelController: run year 943
+14:15:14:058: "14:15:14:" ModelController: run year 944
+14:15:14:146: "14:15:14:" ModelController: run year 945
+14:15:14:218: "14:15:14:" ModelController: run year 946
+14:15:14:304: "14:15:14:" ModelController: run year 947
+14:15:14:401: "14:15:14:" ModelController: run year 948
+14:15:14:507: "14:15:14:" ModelController: run year 949
+14:15:14:586: --- little break ---- (after  11913 ms).
+14:15:14:594: "14:15:14:" ModelController: run year 950
+14:15:14:678: "14:15:14:" ModelController: run year 951
+14:15:14:777: "14:15:14:" ModelController: run year 952
+14:15:14:869: "14:15:14:" ModelController: run year 953
+14:15:14:955: "14:15:14:" ModelController: run year 954
+14:15:15:031: "14:15:15:" ModelController: run year 955
+14:15:15:101: "14:15:15:" ModelController: run year 956
+14:15:15:172: "14:15:15:" ModelController: run year 957
+14:15:15:255: "14:15:15:" ModelController: run year 958
+14:15:15:372: Timer "growTrees()" : "103.161ms"
+14:15:15:387: Timer "Model::runYear()" : "132.078ms"
+14:15:15:387: Timer "ModelController:runYear" : "132.49ms"
+14:15:15:396: "14:15:15:" ModelController: run year 959
+14:15:15:496: Timer "Model::runYear()" : "100.42ms"
+14:15:15:496: Timer "ModelController:runYear" : "100.804ms"
+14:15:15:505: "14:15:15:" ModelController: run year 960
+14:15:15:582: "14:15:15:" ModelController: run year 961
+14:15:15:658: "14:15:15:" ModelController: run year 962
+14:15:15:733: "14:15:15:" ModelController: run year 963
+14:15:15:821: "14:15:15:" ModelController: run year 964
+14:15:15:923: Timer "Model::runYear()" : "101.465ms"
+14:15:15:923: Timer "ModelController:runYear" : "102.023ms"
+14:15:15:932: "14:15:15:" ModelController: run year 965
+14:15:16:047: Timer "Model::runYear()" : "115.524ms"
+14:15:16:048: Timer "ModelController:runYear" : "115.959ms"
+14:15:16:056: "14:15:16:" ModelController: run year 966
+14:15:16:185: Timer "Model::runYear()" : "128.561ms"
+14:15:16:185: Timer "ModelController:runYear" : "128.968ms"
+14:15:16:193: "14:15:16:" ModelController: run year 967
+14:15:16:309: Timer "Model::runYear()" : "115.644ms"
+14:15:16:309: Timer "ModelController:runYear" : "116.111ms"
+14:15:16:318: "14:15:16:" ModelController: run year 968
+14:15:16:402: "14:15:16:" ModelController: run year 969
+14:15:16:402: restart of climate table
+14:15:16:402: restart of climate table
+14:15:16:402: restart of climate table
+14:15:16:402: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:403: restart of climate table
+14:15:16:404: restart of climate table
+14:15:16:404: restart of climate table
+14:15:16:404: restart of climate table
+14:15:16:404: restart of climate table
+14:15:16:483: "14:15:16:" ModelController: run year 970
+14:15:16:493: LIFTorus: value>1:  1  Tree:  "abla" , dbh:  5.49073
+14:15:16:562: "14:15:16:" ModelController: run year 971
+14:15:16:633: "14:15:16:" ModelController: run year 972
+14:15:16:708: "14:15:16:" ModelController: run year 973
+14:15:16:779: "14:15:16:" ModelController: run year 974
+14:15:16:856: "14:15:16:" ModelController: run year 975
+14:15:16:928: "14:15:16:" ModelController: run year 976
+14:15:17:022: "14:15:17:" ModelController: run year 977
+14:15:17:111: "14:15:17:" ModelController: run year 978
+14:15:17:186: "14:15:17:" ModelController: run year 979
+14:15:17:274: "14:15:17:" ModelController: run year 980
+14:15:17:363: "14:15:17:" ModelController: run year 981
+14:15:17:455: "14:15:17:" ModelController: run year 982
+14:15:17:548: "14:15:17:" ModelController: run year 983
+14:15:17:624: "14:15:17:" ModelController: run year 984
+14:15:17:712: "14:15:17:" ModelController: run year 985
+14:15:17:790: "14:15:17:" ModelController: run year 986
+14:15:17:896: "14:15:17:" ModelController: run year 987
+14:15:17:978: "14:15:17:" ModelController: run year 988
+14:15:18:060: "14:15:18:" ModelController: run year 989
+14:15:18:132: "14:15:18:" ModelController: run year 990
+14:15:18:214: "14:15:18:" ModelController: run year 991
+14:15:18:313: "14:15:18:" ModelController: run year 992
+14:15:18:419: Timer "Model::runYear()" : "106.54ms"
+14:15:18:420: Timer "ModelController:runYear" : "106.911ms"
+14:15:18:428: "14:15:18:" ModelController: run year 993
+14:15:18:523: "14:15:18:" ModelController: run year 994
+14:15:18:617: "14:15:18:" ModelController: run year 995
+14:15:18:719: "14:15:18:" ModelController: run year 996
+14:15:18:818: "14:15:18:" ModelController: run year 997
+14:15:18:906: "14:15:18:" ModelController: run year 998
+14:15:18:990: "14:15:18:" ModelController: run year 999
+14:15:19:074: "14:15:19:" ModelController: run year 1000
+14:15:20:657: Timer "TreeOut::exec()" : "1523.89ms"
+14:15:21:156: Timer "outputs" : "2022.15ms"
+14:15:21:156: Timer "Model::runYear()" : "2082.06ms"
+14:15:21:156: Timer "ModelController:runYear" : "2082.42ms"
+14:15:21:167: database transaction commited
+Total timers
+================
+"growRU()" : "1772.28ms"
+"response+3pg" : "2626.46ms"
+"water:run" : "8777.63ms"
+"Model::runYear()" : "1m 46.7088s"
+"outputs" : "31.7473s"
+"modules" : "0.1826ms"
+"painting" : "5891.47ms"
+"Seed dispersal, establishment, sapling growth" : "10.6591s"
+"OutputManager::execute()" : "31.5344s"
+"execute javascript" : "9.2037ms"
+"growTrees()" : "49.5987s"
+"carbon cylce" : "519.769ms"
+"sapling growth" : "3381.43ms"
+"establishment" : "2927.12ms"
+"seed dispersal (all species)" : "4335.23ms"
+"ModelController:runYear" : "1m 47.2711s"
+"SpeciesResponse::calculate" : "2355.55ms"
+"TreeOut::exec()" : "25.7021s"
+"applyPattern()" : "8445.84ms"
+"readPattern()" : "2081.45ms"
+"seed dispersal" : "7844.63ms"
+Sum:  414190 ms
+14:15:21:168: Finished!
+14:15:21:170: Timer "Timer for 1001 runs" : "1m 55.4816s"
+14:15:43:864: Model clear: attempting to clear 190 RU,  1 SpeciesSets.
+14:15:43:884: outputs closed
+14:15:43:884: Model resources freed.
+14:15:43:884: ModelController: Model destroyed.
