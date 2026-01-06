@@ -37,7 +37,7 @@ The project file provided here performs a relatively straightforward implementat
 
 ## Most Useful Species Parameters
 
-This table summarizes the most useful species parameters to modify when calibrating the model. It was created by Kristin Braziunas.
+The table below summarizes the most useful [species parameters](https://iland-model.org/species+parameter) to modify when calibrating the model. It was created by Kristin Braziunas.
 
 | Process  | Sensitive Parameters | 
 | ------------- | ------------- |
