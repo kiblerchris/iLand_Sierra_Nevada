@@ -35,6 +35,21 @@ For the Sierra Nevada model implementation, the LIP files were calibrated using 
 
 The project file provided here performs a relatively straightforward implementation of iLand. It is the result of consultation with other WFFRC research groups, although project files are not completely standardized across the collaborative. All disturbance modules are turned off, along with features like dynamic nitrogen cycling that require extensive parameterization. The landscape is currently set up in `standgrid` mode, where each 1 ha resource unit (i.e., grid cell) has its own climate and soil forcings. The resource units do not interact under the current parameterization. There are 10 replicates of each field plot (19 field plots X 10 replicates = 190 resource units), and each resource unit is entirely independent. The `torus` setting is activated, so any seeds that exit one side of the resource unit will reenter from the opposite side of the same resource unit.
 
+## Control Files
+
+The project file dispatches several other control files that define landscape and species parameters. Once the landscape is set up, the calibration process will most involve modifying `species.sqlite` and `tree_init.txt`. (The file names are defined in the project file and may vary across model implementations.) A brief summary of each control file is provided below:
+
+| File  | Purpose | 
+| ------------- | ------------- |
+| `species.sqlite`  | Defines the [species parameters](https://iland-model.org/species+parameter) |
+| `climate.sqlite` | Defines the [climate](https://iland-model.org/ClimateData?highlight=climate) for each resource unit |
+| `env.grid.txt` | Defines the physical layout of the resource units on the landscape |
+| `environment.txt` | Defines the soil properties for each resource unit. This file can also be used to specify almost any model parameter individually for each resource unit. |
+| `tree_init.txt` | Determines which trees get [initialized](https://iland-model.org/initialize+trees) at the beginning of the model run |
+| `sapling_init.txt` | Determines which sapling cohorts get [initialized](https://iland-model.org/initialize+trees) at the beginning of the model run |
+| LIP `bin` files | Stores the ray tracing lookup tables for each species. The LIP files are defined in `species.sqlite`. |
+| `output.sqlite` | Stores the output database, which contains the user-defined [output tables](https://iland-model.org/Outputs) |
+
 ## Most Useful Species Parameters
 
 The table below summarizes the most useful [species parameters](https://iland-model.org/species+parameter) to modify when calibrating the model. It was created by Kristin Braziunas.
