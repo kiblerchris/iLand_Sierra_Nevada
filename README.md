@@ -37,7 +37,7 @@ The project file provided here performs a relatively straightforward implementat
 
 ## Control Files
 
-The project file dispatches several other control files that define landscape and species parameters. Once the landscape is set up, the calibration process will most involve modifying `species.sqlite` and `tree_init.txt`. (The file names are defined in the project file and may vary across model implementations.) A brief summary of each control file is provided below:
+The project file dispatches several other control files that define landscape and species parameters. Once the landscape is set up, the calibration process will primarily involve modifying `species.sqlite` and `tree_init.txt`. (The file names are defined in the project file and may vary across model implementations.) A brief summary of each control file is provided below:
 
 | File  | Purpose | 
 | ------------- | ------------- |
@@ -47,7 +47,7 @@ The project file dispatches several other control files that define landscape an
 | `environment.txt` | Defines the soil properties for each resource unit. This file can also be used to specify almost any model parameter individually for each resource unit. |
 | `tree_init.txt` | Determines which trees get [initialized](https://iland-model.org/initialize+trees) at the beginning of the model run |
 | `sapling_init.txt` | Determines which sapling cohorts get [initialized](https://iland-model.org/initialize+trees) at the beginning of the model run |
-| LIP `bin` files | Stores the ray tracing lookup tables for each species. The LIP files are defined in `species.sqlite`. |
+| LIP `bin` files | Stores the ray tracing lookup tables for each species. The LIP file names are defined in `species.sqlite`. |
 | `output.sqlite` | Stores the output database, which contains the user-defined [output tables](https://iland-model.org/Outputs) |
 
 ## Most Useful Species Parameters
